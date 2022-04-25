@@ -1,0 +1,50 @@
+.toggleMenu {
+  list-style-type: none;
+  font-size: 0.875rem;
+  z-index: 1;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+  display: none;
+  position: relative;
+  top: 20px;
+  text-decoration: none;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+ul {
+  padding-top: 12px;
+}
+
+.configurationList {
+  padding-top: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.4rem;
+  border: 1px solid darkgrey;
+}
+
+.toggleMenu.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.configureLanguage {
+  position: relative;
+  left: 100px;
+  top: 100px;
+}
+/*# sourceMappingURL=dropdown-component.css.map */

@@ -1,0 +1,41 @@
+.menuButton {
+  width: 175px;
+  height: 40px;
+  background-color: #595959;
+  outline: none;
+  border: 1px solid #595959;
+  border-radius: 100px;
+  font-family: Comic Sans, Comic Sans MS, cursive;
+  font-size: 20px;
+  position: relative;
+  top: 30px;
+  /*
+    :hover{
+        background-color: #404040;
+        width: 175px;
+        height: 40px;
+        border: 1px solid #404040;
+        border-radius: 100px;
+    }
+    */
+}
+
+.menuItems {
+  text-align: center;
+  padding-left: 10px;
+}
+
+.menuItems a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menuItems button {
+  cursor: pointer;
+}
+
+.menuItems:nth-child(3) {
+  padding-left: 600px;
+}
+/*# sourceMappingURL=menulist-component.css.map */

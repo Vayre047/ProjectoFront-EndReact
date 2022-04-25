@@ -1,0 +1,57 @@
+.imagePosition {
+    background-image: url("../../Assets/background-camera.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 275px;
+    //opacity: 0.3;
+}
+
+.registerTitle{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+
+.registerContainer {
+    padding: 20px 0 0 0;
+}
+
+.registerInput{
+    width: 32%;
+    height: 55px;
+    font-size: 16px;
+    padding-left: 1%;
+    outline: transparent;
+}
+
+.registerBTN{
+    width: 9%;
+    height: 61px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 3px;
+    transition: 1s;
+    cursor: pointer;
+    text-decoration: none;
+
+    
+}
+
+.registerBTN:hover {
+    background-color: #990000;
+}
+
+
+.registerLink{
+    text-decoration: none;
+    height: 45px;
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.registerLink:hover {
+    background-color: #990000;
+}

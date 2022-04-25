@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAA;EACV,OAAO,EAAE,UAAU;CACtB",
+    "sources": [
+        "login-component.scss"
+    ],
+    "names": [],
+    "file": "login-component.css"
+}

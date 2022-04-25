@@ -1,0 +1,28 @@
+.moviesPosition {
+  display: block;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.moviesCategory {
+  text-align: center;
+  font-family: Comic Sans, Comic Sans MS, cursive;
+}
+
+.moviesSizeImage {
+  width: 210px;
+  height: 320px;
+  display: block;
+  padding: 0 15px;
+}
+
+.configureLink {
+  text-decoration: none;
+  color: #fff;
+}
+/*# sourceMappingURL=media.component.css.map */

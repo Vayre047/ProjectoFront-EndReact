@@ -1,0 +1,12 @@
+.categoriesList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.configurationNav {
+  position: relative;
+  left: -60px;
+}
+/*# sourceMappingURL=navigation-component.css.map */

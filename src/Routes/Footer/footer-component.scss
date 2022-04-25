@@ -1,0 +1,17 @@
+.footer-container{
+    text-align: center;
+    padding-top: 2.5%;
+    &-items{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1%;
+    }
+}
+
+.detailsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}

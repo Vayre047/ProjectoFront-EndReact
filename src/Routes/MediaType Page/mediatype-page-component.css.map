@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAA;EACV,UAAU,EAAE,MAAM;EAClB,SAAS,EAAE,MAAM;EACjB,WAAW,EAAE,MAAM;EACnB,cAAc,EAAE,MAAM;CACzB",
+    "sources": [
+        "mediatype-page-component.scss"
+    ],
+    "names": [],
+    "file": "mediatype-page-component.css"
+}
