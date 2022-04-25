@@ -9,11 +9,6 @@
           justify-content: center;
 }
 
-.moviesCategory {
-  text-align: center;
-  font-family: Comic Sans, Comic Sans MS, cursive;
-}
-
 .moviesSizeImage {
   width: 210px;
   height: 320px;
