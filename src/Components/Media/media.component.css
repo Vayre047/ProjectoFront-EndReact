@@ -1,3 +1,7 @@
+.titleStyle {
+  text-align: center;
+}
+
 .moviesPosition {
   display: block;
   -webkit-box-orient: horizontal;

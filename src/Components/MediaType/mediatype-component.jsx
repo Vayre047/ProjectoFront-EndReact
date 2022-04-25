@@ -2,7 +2,7 @@ import './mediatype-component.scss';
 import Media  from '../Media/media.component';
 import { useState } from 'react';
 
-function MediaType({Movies, Series}){
+function MediaType({ Movies, Series } ){
     // state variables saving initial images positions and current (index of first view pos)
     const [ view, setView ] = useState([0, 1, 2, 3]);
     const [ secondView, setSecondView ] = useState([0, 1, 2, 3]);
@@ -84,10 +84,10 @@ function MediaType({Movies, Series}){
                         {String.fromCharCode(60)} {/* < */}
                     </button>
                     {/* Call Media component with first, ... position of Movies db */}
-                    <Media media={Movies[view[0]]} mediaType={'Filmes'} />
-                    <Media media={Movies[view[1]]} mediaType={'Filmes'} />
-                    <Media media={Movies[view[2]]} mediaType={'Filmes'} />
-                    <Media media={Movies[view[3]]} mediaType={'Filmes'}/>
+                    <Media media={Movies[view[0]]} mediaType={'Filmes'} cat={''} />
+                    <Media media={Movies[view[1]]} mediaType={'Filmes'} cat={''} />
+                    <Media media={Movies[view[2]]} mediaType={'Filmes'} cat={''} />
+                    <Media media={Movies[view[3]]} mediaType={'Filmes'} cat={''} />
                     <button className='firsBtnRight' type='button' onClick={onMoviesRightButton}>
                         {String.fromCharCode(62)} {/* > */}
                     </button>

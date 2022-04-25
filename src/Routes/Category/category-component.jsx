@@ -67,7 +67,7 @@ function Category(){
         { id: 'terror', db: seriesTerror },
         { id: 'thriller', db: seriesThriller }
     ];
-    console.log(cat);
+    
     // filter array to retrieve category db
     if( mediatype === 'Filmes'){
         database = allMovieCategories.filter((allMovieCategorie) =>
