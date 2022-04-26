@@ -82,7 +82,7 @@ function Category(){
     return(
         <div>
             <h1 className='titleCategory'>{cat}</h1>
-            <Link to = { toRoute } state={{ items: items }}>
+            <Link className='secondaryStyle' to= { toRoute } state={{ items: items }}>
                 <h2>{ mediatype }</h2>
             </Link>
             <div>

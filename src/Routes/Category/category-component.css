@@ -2,4 +2,13 @@
   text-align: center;
   font-size: 40px;
 }
+
+.secondaryStyle {
+  color: #fff;
+  text-decoration: none;
+}
+
+.secondaryStyle h2 {
+  padding-left: 9rem;
+}
 /*# sourceMappingURL=category-component.css.map */
