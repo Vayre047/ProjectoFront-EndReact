@@ -82,15 +82,15 @@ function Category(){
     return(
         <div>
             <h1 className='titleCategory'>{cat}</h1>
-            <Link to = {toRoute} state={{ items: items }}>
-                <h2>{mediatype}</h2>
+            <Link to = { toRoute } state={{ items: items }}>
+                <h2>{ mediatype }</h2>
             </Link>
             <div>
                 {/* 4 image line */}
-                <Line database={database[0].db} row={[0, 1, 2, 3]} />
-                <Line database={database[0].db} row={[4, 5, 6, 7]} />
-                <Line database={database[0].db} row={[8, 9, 10, 11]} />
-                <Line database={database[0].db} row={[12, 13, 14, 15]} />
+                <Line database={database[0].db} row={[0, 1, 2, 3]} mediatype= {mediatype} />
+                <Line database={database[0].db} row={[4, 5, 6, 7]} mediatype={mediatype} />
+                <Line database={database[0].db} row={[8, 9, 10, 11]} mediatype={mediatype} />
+                <Line database={database[0].db} row={[12, 13, 14, 15]} mediatype={mediatype} />
             </div>
         </div>
     )

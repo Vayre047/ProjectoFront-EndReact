@@ -1,6 +1,26 @@
 export const Series = [
-    { Id: 1, Category: 'Suspense', Image: '../images/SeriesSuspanse/series-suspanse1.jpg' },
-    { Id: 2, Category: 'Romance', Image: '../images/SeriesRomance/series-romance1.jpg' },
+    {
+        Id: 1,
+        Title: 'Bom dia, Verônica',
+        Category: 'Suspense',
+        Image: '../images/SeriesSuspanse/series-suspanse1.jpg', 
+        Director: 'Raphael Montes',
+        Elenco: 'Tainá Muller, Eduardo Moscovis, Camila Morgado',
+        Gênero: 'Suspense',
+        Sinopse: 'Enquanto procura um predador que ataca através de um site de encontros, uma polícia descobre um casal com um terrível segredo e toda uma rede de conspiração.',
+        Temporada: ['1ª Temporada']
+    },
+    {
+        Id: 2,
+        Title: 'Virgin River',
+        Category: 'Romance',
+        Image: '../images/SeriesRomance/series-romance1.jpg',
+        Director: 'Sue Tenney',
+        Elenco: 'Alexandra Breckenridge, Martin Henderson, Tim Matheson',
+        Gênero: 'Romance, Drama',
+        Sinopse: 'Uma enfermeira procura um novo começo e muda-se de Los Angeles para uma cidade isolada no norte da Califórnia, onde a esperam inúmeras surpresas.',
+        Temporada: ['1ª Temporada', '2ª Temporada', '3ª Temporada']
+    },
     { Id: 3, Category: 'Policial', Image: '../images/SeriesPolicial/series-policial1.jpg' },
     { Id: 4, Category: 'Mistério', Image: '../images/SeriesMistério/series-misterio1.jpg' },
     { Id: 5, Category: 'Guerra', Image: '../images/SeriesGuerra/series-guerra1.jpg' },

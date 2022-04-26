@@ -1,6 +1,22 @@
 export const acção = [
-    { Id: 1, Image: '../images/FilmesAcção/action-movie1.jpg' },
-    { Id: 2, Image: '../images/FilmesAcção/action-movie2.jpg' },
+    { 
+        Id: 1,
+        Image: '../images/FilmesAcção/action-movie1.jpg',
+        Title: 'The Batman',
+        Director: 'Matt Reeves',
+        Elenco: 'Robert Pattinson, Zoe Kravitz, Paul Dano, Colin Farrel, Jeffrey Wright, Andy Serkis, John Turturro',
+        Gênero: 'Acção, Aventura, Drama, Ficção Científica',
+        Sinopse: 'Quando o Charada, um serial killer sádico, começa a assassinar figuras políticas importantes em Gotham, Batman é forçado a investigar a corrupção oculta da cidade e questionar o envolvimento de sua família.'
+    },
+    {
+        Id: 2,
+        Image: '../images/FilmesAcção/action-movie2.jpg',
+        Title: 'The Tomorrow War',
+        Director: 'Chris Mckay',
+        Elenco: 'Chris Patt, Yvonne Strahovski, J.KSimmos, Betty Gilpin, Sam Richardson, Jasmine Mathews',
+        Gênero: 'Acção, Aventura, Drama',
+        Sinopse: 'O mundo fica chocado quando um grupo de viajantes do tempo chega do ano de 2051 para entregar uma mensagem urgente: Trinta anos no futuro, a humanidade está perdendo uma guerra global contra uma espécie alienígena mortal.'
+    },
     { Id: 3, Image: '../images/FilmesAcção/action-movie3.jpg' },
     { Id: 4, Image: '../images/FilmesAcção/action-movie4.jpg' },
     { Id: 5, Image: '../images/FilmesAcção/action-movie5.jpg' },

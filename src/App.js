@@ -8,6 +8,8 @@ import RegisterHomepage from './Routes/Register/Register Homepage/register-compo
 import LogIn from './Routes/LogIn/login-component';
 import Category from './Routes/Category/category-component';
 import MediatypePage from './Routes/MediaType Page/mediatype-page-component';
+import FilmeDetail from './Components/Watch/filme-component';
+import SerieDetail from './Components/Watch/serie-component';
 
 const App = () => {
  // Routes to different website pages
@@ -22,6 +24,8 @@ const App = () => {
         <Route path='/category' element={<Category />} />
         <Route path='/filmes' element={<MediatypePage />} />
         <Route path='/series' element={<MediatypePage />} />
+        <Route path='/verfilme' element={<FilmeDetail />} />
+        <Route path='/verserie' element={<SerieDetail />} />
       </Routes>
       <Footer links={links} />
     </div>

@@ -1,6 +1,24 @@
 export const seriesRomance = [
-    { Id: 1, Image: '../images/SeriesRomance/series-romance1.jpg' },
-    { Id: 2, Image: '../images/SeriesRomance/series-romance2.jpg' },
+    {
+        Id: 1,
+        Title: 'Virgin River',        
+        Image: '../images/SeriesRomance/series-romance1.jpg',
+        Director: 'Sue Tenney',
+        Elenco: 'Alexandra Breckenridge, Martin Henderson, Tim Matheson',
+        Gênero: 'Romance, Drama',
+        Sinopse: 'Uma enfermeira procura um novo começo e muda-se de Los Angeles para uma cidade isolada no norte da Califórnia, onde a esperam inúmeras surpresas.',
+        Temporada: ['1ª Temporada', '2ª Temporada', '3ª Temporada']
+    },
+    {
+        Id: 2,
+        Title: 'Felicidade - Uma História de amor e desejo',
+        Image: '../images/SeriesRomance/series-romance2.jpg',
+        Director: 'Stefano Cipani, Andrea Molaiola',
+        Elenco: 'Michele Riondino, Lucrezia Guidone, Carolina Sala',
+        Gênero: 'Romance',
+        Sinopse: 'Um casamento aparentemente feliz começa a desmoronar-se quando a lealdade do marido é posta em causa e ambas as partes começam a sentir-se atraídas por outras pessoas.',
+        Temporada: ['1ª Temporada'] 
+    },
     { Id: 3, Image: '../images/SeriesRomance/series-romance3.jpg' },
     { Id: 4, Image: '../images/SeriesRomance/series-romance4.jpg' },
     { Id: 5, Image: '../images/SeriesRomance/series-romance5.jpg' },

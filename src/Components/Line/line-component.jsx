@@ -2,13 +2,14 @@ import './line-component.scss';
 
 import Card from "../Card/card-component";
 
-function Line( { database, row } ){
+function Line( { database, row, mediatype } ){
+
     return(
         <div className='mainLine'>
-            <Card imgsrc={database[row[0]]} />
-            <Card imgsrc={database[row[1]]} />
-            <Card imgsrc={database[row[2]]} />
-            <Card imgsrc={database[row[3]]} />
+            <Card media={database[row[0]]} mediatype={mediatype} />
+            <Card media={database[row[1]]} mediatype={mediatype} />
+            <Card media={database[row[2]]} mediatype={mediatype} />
+            <Card media={database[row[3]]} mediatype={mediatype} />
         </div>
     )
 }
