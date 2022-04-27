@@ -18,6 +18,7 @@
   height: 320px;
   display: block;
   padding: 0 15px;
+  border-radius: 1.5rem;
 }
 
 .configureLink {
