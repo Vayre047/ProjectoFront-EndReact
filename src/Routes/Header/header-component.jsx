@@ -9,7 +9,6 @@ function Header(){
                 <img width={150} src="../../images/logotipo.png" alt="Logotipo" />
             </Link>
             <Navigation />
-            <h1 className="mainTitle">TBAFlix</h1>
         </div>
     )
 }
