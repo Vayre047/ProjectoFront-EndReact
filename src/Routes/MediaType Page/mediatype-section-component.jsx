@@ -22,14 +22,15 @@ import { seriesTerror } from '../../Components/Line/Series DB/series-terror-db';
 import { seriesThriller } from '../../Components/Line/Series DB/series-thriller-db';
 import { useState } from 'react';
 import Media from '../../Components/Media/media.component';
+import { Link } from 'react-router-dom';
 import './mediatype-section-component.scss';
 
-function MediaTypeSection({ cat, mediatype }){
-    const [ basicView, setBasicView ] = useState([0, 1, 2, 3, 4]);
-    const [ sectioncurrent, setSectionCurrent ] = useState(0);
-    
+function MediaTypeSection({ cat, mediatype }) {
+    const [basicView, setBasicView] = useState([0, 1, 2, 3, 4]);
+    const [sectioncurrent, setSectionCurrent] = useState(0);
+
     let database = [];
-    
+
     const allMovieCategories = [
         { id: 'acção', db: acção },
         { id: 'comédia', db: comédia },
@@ -40,7 +41,7 @@ function MediaTypeSection({ cat, mediatype }){
         { id: 'thriller', db: thriller },
         { id: 'western', db: western }
     ];
-    
+
     const allSerieCategories = [
         { id: 'acção', db: seriesAcção },
         { id: 'animação', db: seriesAnimação },
@@ -57,28 +58,28 @@ function MediaTypeSection({ cat, mediatype }){
         { id: 'terror', db: seriesTerror },
         { id: 'thriller', db: seriesThriller }
     ];
-    
+
     if (mediatype === 'Filmes') {
         database = allMovieCategories.filter((category) =>
-        category.id.includes(cat.toLocaleLowerCase())
+            category.id.includes(cat.toLocaleLowerCase())
         );
     } else {
         database = allSerieCategories.filter((category) =>
-        category.id.includes(cat.toLocaleLowerCase())
+            category.id.includes(cat.toLocaleLowerCase())
         );
     }
-    
+
     const sectionDatabase = database[0].db.length;
 
-    const onSectionLeftButton = (event) =>{
+    const onSectionLeftButton = (event) => {
         if (sectioncurrent === 11) {
             setBasicView([sectioncurrent + 1, sectioncurrent + 2, sectioncurrent + 3, sectioncurrent + 4, 0]);
             setSectionCurrent(sectioncurrent + 1);
-        }else if (sectioncurrent === 12) {
+        } else if (sectioncurrent === 12) {
             setBasicView([sectioncurrent + 1, sectioncurrent + 2, sectioncurrent + 3, 0, 1]);
             setSectionCurrent(sectioncurrent + 1);
         } else if (sectioncurrent === 13) {
-            setBasicView([sectioncurrent + 1, sectioncurrent + 2, 0, 1, 2 ]);
+            setBasicView([sectioncurrent + 1, sectioncurrent + 2, 0, 1, 2]);
             setSectionCurrent(sectioncurrent + 1);
         } else if (sectioncurrent === 14) {
             setBasicView([sectioncurrent + 1, 0, 1, 2, 3]);
@@ -108,18 +109,20 @@ function MediaTypeSection({ cat, mediatype }){
         }
     }
 
-    return(
+    return (
         <div className='mediatypeSpacing'>
-            <h3 className="categoryPosition">{cat}</h3>
+            <Link className='linkCategory' to='/category' state={{ cat: cat, mediatype: mediatype }} >
+                <h3 className="categoryPosition">{cat}</h3>
+            </Link>
             <div className='viewPosition'>
                 <button className='categoryBtnLeft' type='button' onClick={onSectionLeftButton}>
                     {String.fromCharCode(60)}
                 </button>
-                <Media media={database[0].db[basicView[0]]} mediaType={ mediatype } cat={ cat } />
-                <Media media={database[0].db[basicView[1]]} mediaType={ mediatype } cat={ cat } />
-                <Media media={database[0].db[basicView[2]]} mediaType={ mediatype } cat={ cat } />
-                <Media media={database[0].db[basicView[3]]} mediaType={ mediatype } cat={ cat } />
-                <Media media={database[0].db[basicView[4]]} mediaType={ mediatype } cat={ cat } />
+                <Media media={database[0].db[basicView[0]]} mediaType={mediatype} cat={cat} />
+                <Media media={database[0].db[basicView[1]]} mediaType={mediatype} cat={cat} />
+                <Media media={database[0].db[basicView[2]]} mediaType={mediatype} cat={cat} />
+                <Media media={database[0].db[basicView[3]]} mediaType={mediatype} cat={cat} />
+                <Media media={database[0].db[basicView[4]]} mediaType={mediatype} cat={cat} />
                 <button className='categoryBtnRight' type='button' onClick={onSectionRightButton}>
                     {String.fromCharCode(62)}
                 </button>

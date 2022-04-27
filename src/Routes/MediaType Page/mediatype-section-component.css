@@ -35,4 +35,9 @@
   color: #fff;
   cursor: pointer;
 }
+
+.linkCategory {
+  text-decoration: none;
+  color: #fff;
+}
 /*# sourceMappingURL=mediatype-section-component.css.map */
