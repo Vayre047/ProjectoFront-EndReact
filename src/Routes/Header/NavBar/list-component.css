@@ -1,28 +1,20 @@
 .menuButton {
-  width: 175px;
-  height: 40px;
+  width: 10.938rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
   background-color: #595959;
   outline: none;
   border: 1px solid #595959;
-  border-radius: 100px;
+  border-radius: 6.25rem;
   font-family: Comic Sans, Comic Sans MS, cursive;
-  font-size: 20px;
+  font-size: 1.25rem;
   position: relative;
-  top: 30px;
-  /*
-    :hover{
-        background-color: #404040;
-        width: 175px;
-        height: 40px;
-        border: 1px solid #404040;
-        border-radius: 100px;
-    }
-    */
+  top: 1.875rem;
 }
 
 .menuItems {
   text-align: center;
-  padding-left: 10px;
+  padding-left: 0.625rem;
 }
 
 .menuItems a {
@@ -36,6 +28,6 @@
 }
 
 .menuItems:nth-child(3) {
-  padding-left: 600px;
+  padding-left: 37.5rem;
 }
 /*# sourceMappingURL=list-component.css.map */
