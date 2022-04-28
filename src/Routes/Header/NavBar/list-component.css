@@ -33,6 +33,12 @@
 
 .loginButton {
   background-color: #ff0000;
-  outline: #ff0000;
+  border: #ff0000;
+}
+
+.loginButton:hover {
+  background-color: #990000;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 /*# sourceMappingURL=list-component.css.map */
