@@ -30,4 +30,9 @@
 .menuItems:nth-child(3) {
   padding-left: 37.5rem;
 }
+
+.loginButton {
+  background-color: #ff0000;
+  outline: #ff0000;
+}
 /*# sourceMappingURL=list-component.css.map */

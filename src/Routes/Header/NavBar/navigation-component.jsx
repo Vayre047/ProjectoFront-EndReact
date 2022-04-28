@@ -9,7 +9,7 @@ function Navigation(){
                 {/* List of dropdown menus */}
                 {Dropdown.map((Drop, index) => (
                     /* Call MenuList with each set of {title, to, submenu} from dropdown-db */
-                    <List items={Drop} key={index} />
+                    <List items={Drop} myKey={index} />
                 ))}
             </ul>
         </nav>
