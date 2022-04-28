@@ -81,7 +81,13 @@ function MediaType({ Movies, Series } ){
                 <h1 className='moviesTitle'>Filmes</h1>
                 <div className='viewPosition'>
                     <button className='firsBtnLeft' type='button' onClick={onMoviesLeftButton}>
-                        {String.fromCharCode(60)} {/* < */}
+                        {//String.fromCharCode(60)
+                        } {/* < */}
+                        <svg id='arrows' className='arrowLeft'>
+                            <polygon className='arrow' points="5,30 47.5,5 12,30 47.5,55" />
+                            <polygon className='arrow arrow-middle' points="5,30 47.5,5 12,30 47.5,53" />
+                            <polygon className='arrow arrow-bottom' points="5,30 47.5,5 12,30 47.5,53" />
+                        </svg>
                     </button>
                     {/* Call Media component with first, ... position of Movies db */}
                     <Media media={Movies[view[0]]} mediaType={'Filmes'} cat={''} />
@@ -89,7 +95,17 @@ function MediaType({ Movies, Series } ){
                     <Media media={Movies[view[2]]} mediaType={'Filmes'} cat={''} />
                     <Media media={Movies[view[3]]} mediaType={'Filmes'} cat={''} />
                     <button className='firsBtnRight' type='button' onClick={onMoviesRightButton}>
-                        {String.fromCharCode(62)} {/* > */}
+                        {//String.fromCharCode(62)
+                        } {/* > */}
+                        <svg id='arrows' className='arrowRight'>
+                            <polygon id='right' className='arrow' points="
+                            47,30 
+                            5,5 
+                            39,30
+                            5,55"/>
+                            <polygon id='right' className='arrow arrow-middle' points="47,30 5,5 39,30 5,53" />
+                            <polygon id='right' className='arrow arrow-bottom' points="47,30 5,5 39,30 5,53" />
+                        </svg>
                     </button>
                 </div>
             </div>
@@ -97,14 +113,26 @@ function MediaType({ Movies, Series } ){
                 <h1 className='moviesTitle'>Séries</h1>
                 <div className='viewPosition'>
                     <button className='firsBtnLeft' type='button' onClick={onSeriesLeftButton}>
-                        {String.fromCharCode(60)} {/* < */}
+                        {//String.fromCharCode(60)
+                        } {/* < */}
+                        <svg id='arrows' className='arrowLeft'>
+                            <polygon className='arrow' points="5,30 47.5,5 12,30 47.5,55" />
+                            <polygon className='arrow arrow-middle' points="5,30 47.5,5 12,30 47.5,53" />
+                            <polygon className='arrow arrow-bottom' points="5,30 47.5,5 12,30 47.5,53" />
+                        </svg>
                     </button>
                     <Media media={Series[secondView[0]]} mediaType={'Séries'} />
                     <Media media={Series[secondView[1]]} mediaType={'Séries'} />
                     <Media media={Series[secondView[2]]} mediaType={'Séries'} />
                     <Media media={Series[secondView[3]]} mediaType={'Séries'} />
                     <button className='firsBtnRight' type='button' onClick={onSeriesRightButton}>
-                        {String.fromCharCode(62)} {/* > */}
+                        {//String.fromCharCode(62)
+                        } {/* > */}
+                        <svg id='arrows' className='arrowRight'>
+                            <polygon id='right' className='arrow' points="47,30 5,5 39,30 5,55"/>
+                            <polygon id='right' className='arrow arrow-middle' points="47,30 5,5 39,30 5,53" />
+                            <polygon id='right' className='arrow arrow-bottom' points="47,30 5,5 39,30 5,53" />
+                        </svg>
                     </button>
                 </div>
             </div>

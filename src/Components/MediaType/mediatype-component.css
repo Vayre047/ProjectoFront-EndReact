@@ -49,4 +49,60 @@
   color: #fff;
   cursor: pointer;
 }
+
+#arrows {
+  width: 100px;
+  height: 65px;
+}
+
+#arrows:hover polygon {
+  fill: red;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+#arrows:hover polygon.arrow-middle {
+  -webkit-transform: translateX(18px);
+          transform: translateX(18px);
+}
+
+#arrows:hover polygon.arrow-bottom {
+  -webkit-transform: translateX(36px);
+          transform: translateX(36px);
+}
+
+#arrows:hover polygon#right {
+  fill: red;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+#arrows:hover polygon#right.arrow-middle {
+  -webkit-transform: translateX(-18px);
+          transform: translateX(-18px);
+}
+
+#arrows:hover polygon#right.arrow-bottom {
+  -webkit-transform: translateX(-36px);
+          transform: translateX(-36px);
+}
+
+.arrowRight {
+  position: relative;
+  left: 30px;
+}
+
+polygon {
+  fill: #FFF;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+polygon.arrow-middle {
+  opacity: 0.75;
+}
+
+polygon.arrow-top {
+  opacity: 0.5;
+}
 /*# sourceMappingURL=mediatype-component.css.map */
