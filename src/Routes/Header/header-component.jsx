@@ -6,7 +6,7 @@ function Header(){
     return(
         <div className='header-container'>
             <Link to='/'>
-                <img width={150} src="../../images/logotipo.png" alt="Logotipo" />
+                <img className='logoPosition' width={150} src="../../images/logotipo.png" alt="Logotipo" />
             </Link>
             <Navigation />
         </div>

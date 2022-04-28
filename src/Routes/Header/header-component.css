@@ -14,6 +14,10 @@
       flex-wrap: wrap;
 }
 
+.logoPosition {
+  padding: 25px 0 0 0;
+}
+
 .headerBtn {
   display: -webkit-box;
   display: -ms-flexbox;
