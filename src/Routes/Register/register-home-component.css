@@ -1,14 +1,15 @@
 .imagePosition {
-  background-size: cover;
-  background-repeat: no-repeat;
   width: auto;
   height: 275px;
 }
 
 .registerTitle {
+  background: url("../../../public/images/TBAFlix_Header.jpg") no-repeat center/cover;
   text-align: center;
   background-color: #000;
   color: #fff;
+  height: 350px;
+  padding: 80px 0 0 0;
 }
 
 .registerContainer {
