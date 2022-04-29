@@ -89,7 +89,7 @@
 
 .arrowRight {
   position: relative;
-  left: 30px;
+  left: -30px;
 }
 
 polygon {

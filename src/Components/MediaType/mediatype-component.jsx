@@ -1,6 +1,7 @@
 import './mediatype-component.scss';
 import Media  from '../Media/media.component';
 import { useState } from 'react';
+import MediaLine from './medialine-component';
 
 function MediaType({ Movies, Series } ){
     // state variables saving initial images positions and current (index of first view pos)
@@ -75,6 +76,9 @@ function MediaType({ Movies, Series } ){
         }
     }
 
+    const mediaMoviesArray = [Movies[view[0]], Movies[view[1]], Movies[view[2]], Movies[view[3]]];
+    const mediaSeriesArray = [Series[secondView[0]], Series[secondView[1]], Series[secondView[2]], Series[secondView[3]]];
+
     return(
         <div>
             <div>
@@ -90,10 +94,7 @@ function MediaType({ Movies, Series } ){
                         </svg>
                     </button>
                     {/* Call Media component with first, ... position of Movies db */}
-                    <Media media={Movies[view[0]]} mediaType={'Filmes'} cat={''} />
-                    <Media media={Movies[view[1]]} mediaType={'Filmes'} cat={''} />
-                    <Media media={Movies[view[2]]} mediaType={'Filmes'} cat={''} />
-                    <Media media={Movies[view[3]]} mediaType={'Filmes'} cat={''} />
+                    <MediaLine media={ mediaMoviesArray } mediaType={'Filmes'} />
                     <button className='firsBtnRight' type='button' onClick={onMoviesRightButton}>
                         {//String.fromCharCode(62)
                         } {/* > */}
@@ -121,10 +122,7 @@ function MediaType({ Movies, Series } ){
                             <polygon className='arrow arrow-bottom' points="5,30 47.5,5 12,30 47.5,53" />
                         </svg>
                     </button>
-                    <Media media={Series[secondView[0]]} mediaType={'Séries'} />
-                    <Media media={Series[secondView[1]]} mediaType={'Séries'} />
-                    <Media media={Series[secondView[2]]} mediaType={'Séries'} />
-                    <Media media={Series[secondView[3]]} mediaType={'Séries'} />
+                    <MediaLine media={mediaSeriesArray} mediaType={'Series'} />
                     <button className='firsBtnRight' type='button' onClick={onSeriesRightButton}>
                         {//String.fromCharCode(62)
                         } {/* > */}
