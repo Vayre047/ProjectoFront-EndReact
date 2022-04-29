@@ -1,0 +1,50 @@
+#arrows {
+    width: 100px;
+    height: 65px;
+
+    &:hover {
+        polygon {
+            fill: red;
+            transition: all .2s ease-out;
+
+            &.arrow-middle {
+                transform: translateX(18px);
+            }
+
+            &.arrow-bottom {
+                transform: translateX(36px);
+            }
+        }
+
+        polygon#right {
+            fill: red;
+            transition: all .2s ease-out;
+
+            &.arrow-middle {
+                transform: translateX(-18px);
+            }
+
+            &.arrow-bottom {
+                transform: translateX(-36px);
+            }
+        }
+    }
+}
+
+.arrowRight {
+    position: relative;
+    left: -30px;
+}
+
+polygon {
+    fill: #FFF;
+    transition: all .2s ease-out;
+
+    &.arrow-middle {
+        opacity: 0.75;
+    }
+
+    &.arrow-top {
+        opacity: 0.5
+    }
+}

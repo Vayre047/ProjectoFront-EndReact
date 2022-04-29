@@ -10,7 +10,7 @@ function FilmeDetail(){
     return(
         <div className="columnsPosition" key={ Id }>
             <div>
-                <img className="imageConfiguration" src={Image} alt="Movie Image" />
+                <img className="imageConfiguration" src={Image} alt="Movie" />
             </div>
             <div className="textPosition">
                 <h3>Título: {Title}</h3>

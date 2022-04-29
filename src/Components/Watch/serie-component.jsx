@@ -11,7 +11,7 @@ function SerieDetail(){
     return(
         <div className="columnsPosition" key={Id}>
             <div>
-                <img className="imageConfiguration" src={Image} alt="Movie Image" />
+                <img className="imageConfiguration" src={Image} alt="Serie" />
             </div>
             <div className="textPosition">
                 <h3>Título: {Title}</h3>
