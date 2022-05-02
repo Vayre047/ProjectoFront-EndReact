@@ -34,11 +34,15 @@
 .loginButton {
   background-color: #ff0000;
   border: #ff0000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .loginButton:hover {
   background-color: #990000;
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
+}
+
+.userProfile {
+  size: 100px;
 }
 /*# sourceMappingURL=list-component.css.map */

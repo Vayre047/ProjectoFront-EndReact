@@ -32,9 +32,12 @@
 .loginButton{
     background-color: #ff0000;
     border: #ff0000;
-
+    transition: 0.5s;
     &:hover{
         background-color: #990000;
-        transition: 1.5s;
     }
+}
+
+.userProfile{
+    size: 100px;
 }

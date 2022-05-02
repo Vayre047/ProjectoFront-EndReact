@@ -1,18 +1,36 @@
 import './login-component.scss';
+import { useContext, useState } from 'react';
+import { UserContext } from '../../Context/user-context';
 
 function LogIn(){
+
+    const [formFields, setformFields] = useState({
+        username: '',
+        password: '',
+    });
+
+    const { setCurrentUser, setState} = useContext(UserContext);
+
+    const onSubmit = (event) => {
+        event.preventDefault();
+        const {username, password} = formFields;
+        setState(true)
+        setCurrentUser({ username: username, password: password});
+    }
+
     // Login Form
     return(
         <div className="divRegister">
-            <form className='inputFields'>
+            <form onSubmit={onSubmit} className='inputFields'>
                 <input
                     className='inputRegister'
                     type='text'
                     name='username'
                     aria-label='Username'
                     placeholder='Digite o seu número ou nome de usário' minLength='3'
+                    onChange={event => setformFields({username: event.target.value})}
                     maxLength='20'
-                    requerid
+                    required
                 />
 
                 <label className="labelForm" htmlFor="passwordRepeat"></label>
@@ -22,9 +40,10 @@ function LogIn(){
                     name='passwordLogIn'
                     aria-label='passwordLogIn'
                     placeholder='Digite a sua password'
+                    onChange={event => setformFields({ password: event.target.value }) }
                     minLength='3'
                     maxLength='20'
-                    requerid
+                    required
                 />
 
                 <div className='checkboxRegister'>
@@ -33,11 +52,10 @@ function LogIn(){
                             type='checkbox'
                             name='checkbox'
                             aria-label='Checkbox'
-                            requerid
                         /> Lembrar-me
                     </label>
                 </div>
-                <button className='registerButton'>Entrar</button>
+                <button type='submit' className='registerButton'>Entrar</button>
             </form>
         </div>
     )
