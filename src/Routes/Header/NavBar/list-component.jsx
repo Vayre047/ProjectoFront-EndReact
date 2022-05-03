@@ -31,8 +31,10 @@ function List({ items, myKey }){
                     position="bottom center"
                     nested
                 >
-                    <Link to="/userprofile">Profile</Link>
-                    <Link to="/" onClick={logOff}>Sair</Link>
+                    <div>
+                        <Link className="profileLink" to="/userprofile">Profile</Link>
+                        <Link className="profileLink" to="/" onClick={logOff}>Sair</Link>
+                    </div>
                 </Popup>
                 : 
                     <div>

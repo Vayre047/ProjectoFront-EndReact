@@ -11,11 +11,8 @@ function RegisterText(){
             <h2>Veja em qualquer sitio. Cancele em qualquer altura.</h2>
             {(isLoggedIn === true) ?
                 <div>
-
                 </div>
-                
                 :
-
                 <div>
                     <p>Quer começar a ver ? Coloque o seu e-mail para criar ou activar a sua conta.</p>
                     <div className="registerContainer">

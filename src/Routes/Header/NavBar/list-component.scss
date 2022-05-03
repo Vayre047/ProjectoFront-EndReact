@@ -39,5 +39,17 @@
 }
 
 .userProfile{
-    size: 100px;
+    width: 75px;
+    height: 75px;
+}
+
+.profileLink{
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    padding: 20px 20px 20px 20px;
 }
