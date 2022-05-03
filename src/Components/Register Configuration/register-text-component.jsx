@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
 import { UserContext } from '../../Context/user-context';
 import { useState, useContext } from "react";
+import './register-text-component.scss'
 
 function RegisterText(){
-    const { isLoggedIn, setIsLoggedIn } = useContext(UserContext);
+    const { isLoggedIn } = useContext(UserContext);
 
     return(
         <div className="registerTitle">
@@ -11,6 +12,10 @@ function RegisterText(){
             <h2>Veja em qualquer sitio. Cancele em qualquer altura.</h2>
             {(isLoggedIn === true) ?
                 <div>
+                    <p className='textLoggedIn'>Veja em streaming com acesso ilimitado a </p> 
+                    <p className='textLoggedIn'>séries e filmes no seu telemóvel, tablet, computador e televisor, sem ter de pagar mais.</p>
+                    <p className='textLoggedIn'>As crianças também poderão descobrir novas aventuras e encontrar</p>
+                    <p className='textLoggedIn'>os seus personagens favoritos num espaço dedicado, que está incluído na sua adesão.</p>
                 </div>
                 :
                 <div>
