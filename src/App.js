@@ -15,7 +15,7 @@ import UserProfile from './Routes/User Profile/user-profile-component';
 import { UserContext } from './Context/user-context';
 
 const App = () => {
-  const { state } = useContext(UserContext);
+  const { isLoggedIn } = useContext(UserContext);
   
  // Routes to different website pages
   return (
@@ -25,7 +25,7 @@ const App = () => {
       <Routes>
         <Route path="/" exact={true} element={<Main />} />
         <Route path='/register' element={<RegisterHomepage />} />
-        <Route path='/login' element={state ? <UserProfile /> : <LogIn />} />
+        <Route path='/login' element={isLoggedIn ? <UserProfile /> : <LogIn />} />
         <Route path='/category' element={<Category />} />
         <Route path='/filmes' element={<MediatypePage />} />
         <Route path='/series' element={<MediatypePage />} />

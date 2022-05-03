@@ -9,12 +9,12 @@ function LogIn(){
         password: '',
     });
 
-    const { setCurrentUser, setState} = useContext(UserContext);
+    const { setCurrentUser, setIsLoggedIn} = useContext(UserContext);
 
     const onSubmit = (event) => {
         event.preventDefault();
         const {username, password} = formFields;
-        setState(true)
+        setIsLoggedIn(true)
         setCurrentUser({ username: username, password: password});
     }
 

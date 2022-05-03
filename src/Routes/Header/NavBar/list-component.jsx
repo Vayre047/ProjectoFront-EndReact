@@ -2,12 +2,13 @@ import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import Dropdown from "./dropdown-component";
 import { UserContext } from '../../../Context/user-context';
+import Popup from 'reactjs-popup';
 import './list-component.scss';
 
 function List({ items, myKey }){
     // state variable dropdown to show list of options when triggered
     const [dropdown, setDropdown] = useState(false);
-    const { state } = useContext(UserContext);
+    const { isLoggedIn, setIsLoggedIn } = useContext(UserContext);
 
     const onMouseEnter = () => {
         setDropdown(true);
@@ -17,11 +18,23 @@ function List({ items, myKey }){
         setDropdown(false);
     }
 
-    
+    const logOff = () => {
+        setIsLoggedIn(false);
+    }
+
     return(
         <li onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className="menuItems">
         {/* List of menus (Filmes, Series, Idioma, Iniciar Sessão) */}
-            {(myKey === 3 && state === true) ? <img className="userProfile" src="../../../../images/user.png" alt="Profile Image" /> : 
+            {(myKey === 3 && isLoggedIn === true) ? 
+                <Popup
+                    trigger={<button type='button'><img className="userProfile" src="../../../../images/user.png" alt="Profile Image" /></button>}
+                    position="bottom center"
+                    nested
+                >
+                    <Link to="/userprofile">Profile</Link>
+                    <Link to="/" onClick={logOff}>Sair</Link>
+                </Popup>
+                : 
                     <div>
                         <button className={`menuButton ${myKey === 3 ? 'loginButton' : ''}`} type="button" aria-haspopup="menu" aria-expanded={ dropdown ? "true" : "false" }>
                             {/* when clicked follow the "to" route */}

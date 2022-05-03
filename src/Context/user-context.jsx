@@ -8,13 +8,12 @@ export const UserContext = createContext({
 
 export const UserProvider = ({ children }) => {
     const [ currentUser, setCurrentUser ] = useState(null);
-    const [ state, setState ] = useState( false );
-    //const setLogin = (isLoggedIn) => setState({isLoggedIn});
+    const [ isLoggedIn, setIsLoggedIn ] = useState( false );
 
     /*const login =(email, password) => {
         setLogin(true);
     }*/
-    const value = { currentUser, setCurrentUser, state, setState };
+    const value = { currentUser, setCurrentUser, isLoggedIn, setIsLoggedIn };
 
     return <UserContext.Provider value={value}>{ children }</UserContext.Provider>
 }
