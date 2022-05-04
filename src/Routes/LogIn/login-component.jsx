@@ -14,9 +14,16 @@ function LogIn(){
     const onSubmit = (event) => {
         event.preventDefault();
         const {username, password} = formFields;
-        setIsLoggedIn(true)
+        setIsLoggedIn(true);
         setCurrentUser({ username: username, password: password});
     }
+
+    const onChange = (event) => {
+        const { name, value } = event.target;
+
+        setformFields({ ...formFields, [name]: value})
+    }
+
 
     // Login Form
     return(
@@ -28,7 +35,7 @@ function LogIn(){
                     name='username'
                     aria-label='Username'
                     placeholder='Digite o seu número ou nome de usário' minLength='3'
-                    onChange={event => setformFields({username: event.target.value})}
+                    onChange={onChange}
                     maxLength='20'
                     required
                 />
@@ -37,10 +44,10 @@ function LogIn(){
                 <input
                     className='inputRegister'
                     type='password'
-                    name='passwordLogIn'
-                    aria-label='passwordLogIn'
+                    name='password'
+                    aria-label='password'
                     placeholder='Digite a sua password'
-                    onChange={event => setformFields({ password: event.target.value }) }
+                    onChange={onChange}
                     minLength='3'
                     maxLength='20'
                     required

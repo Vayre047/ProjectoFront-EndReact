@@ -16,7 +16,7 @@ import { UserContext } from './Context/user-context';
 
 const App = () => {
   const { isLoggedIn } = useContext(UserContext);
-  
+
  // Routes to different website pages
   return (
     <div>
@@ -24,7 +24,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" exact={true} element={<Main />} />
-        <Route path='/register' element={<RegisterHomepage />} />
+        <Route path='/register' element={isLoggedIn ? <UserProfile /> : <RegisterHomepage />} />
         <Route path='/login' element={isLoggedIn ? <UserProfile /> : <LogIn />} />
         <Route path='/category' element={<Category />} />
         <Route path='/filmes' element={<MediatypePage />} />
