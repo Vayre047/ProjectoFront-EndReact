@@ -1,6 +1,6 @@
 .menuButton{
-    width: 10.938rem;
-    height: 2.5rem;
+    width: 11.393749999999999vw;
+    height: 5.689900426742532vh;
     line-height: 2.5rem;
     background-color: #595959;
     outline: none;
@@ -9,12 +9,12 @@
     font-family: Comic Sans, Comic Sans MS, cursive;
     font-size: 1.25rem;
     position: relative;
-    top: 1.875rem;
+    top: 4.267425320056899vh;
 }
 
 .menuItems{
     text-align: center;
-    padding-left: 0.625rem;
+    padding-left: 0.6510416666666666vw;
     a{
         display: block;
         text-decoration: none;
@@ -26,7 +26,7 @@
 }
 
 .menuItems:nth-child(3) {
-    padding-left: 37.5rem;
+    padding-left: 39.0625vw;
 }
 
 .loginButton{
@@ -39,8 +39,10 @@
 }
 
 .userProfile{
-    width: 75px;
-    height: 75px;
+    width: 4.8828125vw;
+    height: 10.668563300142248vh;
+    border: none;
+    outline: none;
 }
 
 .profileLink{
@@ -51,5 +53,5 @@
     color: #fff;
     border: 2px solid #fff;
     border-radius: 3px;
-    padding: 20px 20px 20px 20px;
+    padding: 2.844950213371266vh 1.3020833333333333vw 2.844950213371266vh 1.3020833333333333vw;
 }
