@@ -8,10 +8,10 @@ function RegisterText(){
 
     return(
         <div className="registerTitle">
-            <h1>Acesso infinito a filmes e séries.</h1>
+            <h1 className='titleRegister'>Acesso infinito a filmes e séries.</h1>
             <h2>Veja em qualquer sitio. Cancele em qualquer altura.</h2>
             {(isLoggedIn === true) ?
-                <div>
+                <div className='formationText'>
                     <p className='textLoggedIn'>Veja em streaming com acesso ilimitado a </p> 
                     <p className='textLoggedIn'>séries e filmes no seu telemóvel, tablet, computador e televisor, sem ter de pagar mais.</p>
                     <p className='textLoggedIn'>As crianças também poderão descobrir novas aventuras e encontrar</p>
@@ -19,7 +19,7 @@ function RegisterText(){
                 </div>
                 :
                 <div>
-                    <p>Quer começar a ver ? Coloque o seu e-mail para criar ou activar a sua conta.</p>
+                    <p className='formationText'>Quer começar a ver ? Coloque o seu e-mail para criar ou activar a sua conta.</p>
                     <div className="registerContainer">
                         <input className="registerInput" type="email" placeholder="Endereço de E-mail" />
                         <button className="registerBTN" type='button'>

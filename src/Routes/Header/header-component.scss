@@ -2,16 +2,15 @@
     background-color: #000000;
     background: url('../../../public/images/TBATitle.jpeg') no-repeat center/contain;
     width: 100%;
-    height: 28.44950213371266vh;
+    height: 200px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 1% 0 0 0;
 }
 
 .logoPosition{
-    padding: 3.5561877667140824vh 0 0 0;
-    width: 9.765625vw;
-    height: 21.337126600284495vh;
+    padding: 25px 0 0 0;
 }
 
 .headerBtn{
@@ -19,10 +18,10 @@
     justify-content: flex-end;
     padding-right: 4%;
     padding-bottom: 4%;
-    width: 45.572916666666664vw;
+    width: 700px;
     gap: 1%;
     position: static;
-    top: -11.379800853485063vh;
+    top: -80px;
     left: 0;
 }
 
@@ -43,7 +42,7 @@
     color: #ffffff;
     outline: #ffffff;
     width: 22%;
-    height: 5.689900426742532vh;
+    height: 40px;
     font-size: 17px;
 }
 
@@ -56,12 +55,55 @@
     text-decoration: none;
     font-weight: 500;
     font-size: 17px;
-    width: 10.026041666666666vw;
-    height: 5.689900426742532vh;
+    width: 154px;
+    height: 40px;
     line-height: 40px;
     transition: 0.5s;
     position: relative;
     top: -280%;
     left: 450%;
     max-width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .logoPosition {
+        padding: 12.5px 0 0 0;
+        width: 75px;
+        height: 75px;
+    }
+
+    .header-container {
+        background-color: #000000;
+        background: url('../../../public/images/TBATitle.jpeg') no-repeat center/contain;
+        width: 50%;
+        height: 100px;
+        position: absolute;
+        top: 2vh;
+        left: 10vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0.5% 0 0 0;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .logoPosition {
+        width: 0;
+        height: 0;
+    }
+
+    .header-container {
+        background-color: #000000;
+        background: url('../../../public/images/TBATitle.jpeg') no-repeat center/contain;
+        width: 35%;
+        height: 75px;
+        position: absolute;
+        top: 7vh;
+        left: 30vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0.5% 0 0 0;
+    }
 }

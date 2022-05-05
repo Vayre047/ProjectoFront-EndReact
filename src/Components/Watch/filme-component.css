@@ -6,13 +6,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: center;
           flex-direction: center;
-  padding-left: 3.5rem;
+  padding-left: 56px;
 }
 
 .imageConfiguration {
-  width: 25rem;
-  height: 35rem;
-  border-radius: 0.7rem;
+  width: 400px;
+  height: 560px;
+  border-radius: 11.2px;
 }
 
 .textPosition {

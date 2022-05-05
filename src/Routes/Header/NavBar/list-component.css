@@ -45,6 +45,8 @@
 .userProfile {
   width: 75px;
   height: 75px;
+  border: none;
+  outline: none;
 }
 
 .profileLink {

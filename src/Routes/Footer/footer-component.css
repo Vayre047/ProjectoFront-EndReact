@@ -1,6 +1,6 @@
 .footer-container {
   text-align: center;
-  padding-top: 2.5%;
+  padding: 2.5% 0 2.5% 0;
 }
 
 .footer-container-items {
@@ -29,5 +29,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   gap: 15px;
+  padding: 1% 0 1% 0;
 }
 /*# sourceMappingURL=footer-component.css.map */

@@ -1,6 +1,6 @@
 .imagePosition {
     width: auto;
-    height: 39.11806543385491vh;
+    height: 275px;
 }
 
 .registerTitle{
@@ -8,25 +8,40 @@
     text-align: center;
     background-color: #000;
     color: #fff;
-    height: 49.786628733997155vh;
-    padding: 11.379800853485063vh 0 0 0;
+    height: 0%;
+    padding: 80px 0 0 0;
 }
 
 .registerContainer {
-    padding: 2.844950213371266vh 0 0 0;
+    padding: 20px 0 0 0;
 }
 
 .registerInput{
     width: 32%;
-    height: 7.823613086770981vh;
+    height: 60.5px;
     font-size: 16px;
     padding-left: 1%;
     outline: transparent;
 }
+@media screen and (max-width: 767px) {
+    .imagePosition {
+        width: auto;
+        height: 137.5px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .imagePosition {
+        width: auto;
+        height: 68.5px;
+    }
+
+    
+}
 
 .registerBTN{
     width: 9%;
-    height: 8.677098150782362vh;
+    height: 66px;
     font-size: 16px;
     font-weight: 600;
     background-color: #ff0000;
@@ -35,14 +50,11 @@
     transition: 1s;
     cursor: pointer;
     text-decoration: none;
-
-    
 }
 
 .registerBTN:hover {
     background-color: #990000;
 }
-
 
 .registerLink{
     text-decoration: none;

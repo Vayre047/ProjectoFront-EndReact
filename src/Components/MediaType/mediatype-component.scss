@@ -12,12 +12,21 @@
     justify-content: center;
 }
 
+@media screen and (max-width: 760px) {
+    .viewPosition {
+        display: grid;
+        grid-column: 2;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+}
+
 .firsBtnLeft{
     gap: 5px;
     width: 3.5%;
     height: 5%;
     position: relative;
-    top: 28.44950213371266vh;
+    top: 200px;
     line-height: end;
     border: none;
     font-weight: 600;
