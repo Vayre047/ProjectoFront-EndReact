@@ -90,8 +90,11 @@
 
 @media screen and (max-width: 479px) {
     .logoPosition {
-        width: 0;
-        height: 0;
+        padding: 6px 0 0 0;
+        position: absolute;
+        left: -22vw;
+        width: 70px;
+        height: 70px;
     }
 
     .header-container {
