@@ -53,10 +53,18 @@
   background-color: #990000;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 960px) {
   .imagePosition {
     width: auto;
     height: 137.5px;
+  }
+  .registerTitle {
+    background: url("../../../public/images/TBAFlix_Header.jpg") no-repeat center/cover;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    height: 0%;
+    padding: 120px 0 0 0;
   }
   .registerInput {
     width: 24%;

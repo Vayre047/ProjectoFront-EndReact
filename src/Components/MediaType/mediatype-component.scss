@@ -12,15 +12,6 @@
     justify-content: center;
 }
 
-@media screen and (max-width: 760px) {
-    .viewPosition {
-        display: grid;
-        grid-column: 2;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
-    }
-}
-
 .firsBtnLeft{
     gap: 5px;
     width: 3.5%;
@@ -50,4 +41,8 @@
     background-color: transparent;
     color: #fff;
     cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+    
 }

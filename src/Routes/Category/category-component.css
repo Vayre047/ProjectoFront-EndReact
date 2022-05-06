@@ -11,4 +11,11 @@
 .secondaryStyle h2 {
   padding-left: 176px;
 }
+
+@media screen and (max-width: 960px) {
+  .titleCategory {
+    text-align: center;
+    font-size: 40px;
+  }
+}
 /*# sourceMappingURL=category-component.css.map */

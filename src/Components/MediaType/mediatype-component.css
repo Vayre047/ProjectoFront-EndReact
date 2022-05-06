@@ -19,20 +19,6 @@
           justify-content: center;
 }
 
-@media screen and (max-width: 760px) {
-  .viewPosition {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-column: 2;
-    grid-column: 2;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 .firsBtnLeft {
   gap: 5px;
   width: 3.5%;

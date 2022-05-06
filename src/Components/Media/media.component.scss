@@ -21,3 +21,54 @@
     text-decoration: none;
     color: #fff;
 }
+
+@media screen and (max-width: 960px) {
+    .viewPosition {
+        display: grid;
+        grid-column: 2;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+
+    .moviesSizeImage {
+        width: 180px;
+        height: 320px;
+        display: flex;
+        gap: 10px;
+        flex-direction: center;
+        justify-content: flex-start;
+        padding: 0 0 0 0;
+        border-radius: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .viewPosition {
+        display: grid;
+        grid-column: 2;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+
+    .moviesPosition {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .moviesSizeImage {
+        width: 180px;
+        height: 320px;
+        display: flex;
+        gap: 10px;
+        flex-direction: center;
+        justify-content: flex-start;
+        padding: 0 0 0 0;
+        border-radius: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 479px) {
+
+}

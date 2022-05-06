@@ -76,7 +76,7 @@
   max-width: 100%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 960px) {
   .logoPosition {
     padding: 12.5px 0 0 0;
     position: absolute;
@@ -100,7 +100,7 @@
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 0.5% 0 0 0;
+    padding: 0 0 0 0;
   }
 }
 

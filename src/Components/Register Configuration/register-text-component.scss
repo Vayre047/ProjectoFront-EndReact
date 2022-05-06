@@ -12,10 +12,20 @@
     padding: 15px 0 5px 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 960px) {
     .imagePosition {
         width: auto;
         height: 137.5px;
+    }
+
+    .subTitleRegister{
+        padding: -20 0 0 0;
+        font-size: 16px;
+    }
+
+    .formationText {
+        font-size: 14px;
+        padding: 15px 0 5px 0;
     }
 
     .registerInput {
@@ -25,4 +35,10 @@
         padding-left: 1%;
         outline: transparent;
     }
+
+    .titleRegister {
+        font-size: 24px;
+        padding: 0 0 10px 0;
+    }
+
 }

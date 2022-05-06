@@ -9,7 +9,7 @@ function RegisterText(){
     return(
         <div className="registerTitle">
             <h1 className='titleRegister'>Acesso infinito a filmes e séries.</h1>
-            <h2>Veja em qualquer sitio. Cancele em qualquer altura.</h2>
+            <h2 className='subTitleRegister'>Veja em qualquer sitio. Cancele em qualquer altura.</h2>
             {(isLoggedIn === true) ?
                 <div className='formationText'>
                     <p className='textLoggedIn'>Veja em streaming com acesso ilimitado a </p> 
