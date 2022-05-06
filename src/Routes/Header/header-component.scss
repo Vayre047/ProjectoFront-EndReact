@@ -68,8 +68,10 @@
 @media screen and (max-width: 767px) {
     .logoPosition {
         padding: 12.5px 0 0 0;
-        width: 75px;
-        height: 75px;
+        position: absolute;
+        left: -27vw;
+        width: 90px;
+        height: 90px;
     }
 
     .header-container {
@@ -78,8 +80,7 @@
         width: 50%;
         height: 100px;
         position: absolute;
-        top: 2vh;
-        left: 10vw;
+        left: 30vw;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
