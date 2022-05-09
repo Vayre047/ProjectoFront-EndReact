@@ -14,8 +14,12 @@
     width: 225px;
     height: 230px;
     position: relative;
-    top: 110px;
+    top: 130px;
     left: 37%;
+  }
+  .userDetails {
+    text-align: center;
+    padding: 20% 0 0 0;
   }
 }
 
@@ -24,8 +28,10 @@
     width: 175px;
     height: 200px;
     position: relative;
-    top: 130px;
     left: 29%;
+  }
+  .userDetails {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=user-profile-component.css.map */
