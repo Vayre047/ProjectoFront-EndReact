@@ -18,4 +18,40 @@
 .textPosition {
   text-align: center;
 }
+
+@media screen and (max-width: 960px) {
+  .columnsPosition {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: center;
+            flex-direction: center;
+    padding: 22% 0 0 56px;
+  }
+  .imageConfiguration {
+    width: 320px;
+    height: 480px;
+    border-radius: 11.2px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .columnsPosition {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: center;
+            flex-direction: center;
+    padding: 34% 0 0 4vw;
+  }
+  .imageConfiguration {
+    width: 220px;
+    height: 300px;
+    border-radius: 11.2px;
+  }
+}
 /*# sourceMappingURL=filme-component.css.map */

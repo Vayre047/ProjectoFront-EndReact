@@ -15,7 +15,7 @@
 }
 
 .moviesSizeImage {
-  width: 88%;
+  max-width: 88%;
   height: 320px;
   display: block;
   padding: 0 15px;
@@ -28,24 +28,22 @@
 }
 
 @media screen and (max-width: 960px) {
-  .viewPosition {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-column: 2;
-    grid-column: 2;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .titleStyle {
+    text-align: center;
+    padding: 0 0 15% 40%;
+  }
+  .moviesPosition {
+    display: block;
+    text-align: center;
+    width: 70%;
   }
   .moviesSizeImage {
-    width: 180px;
-    height: 320px;
+    max-width: 20vw;
+    height: 46vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 10px;
+    gap: 5px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: center;
@@ -58,47 +56,29 @@
   }
 }
 
-@media screen and (max-width: 960px) {
-  .viewPosition {
+@media screen and (max-width: 479px) {
+  .moviesPosition {
     display: -ms-grid;
     display: grid;
-    -ms-grid-column: 2;
-    grid-column: 2;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .moviesPosition {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
+    width: 70%;
   }
   .moviesSizeImage {
-    width: 180px;
-    height: 320px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 10px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: center;
-            flex-direction: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    padding: 0 0 0 0;
-    border-radius: 1.5rem;
+    max-width: 10vw;
+    height: 26vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1vh 0 0 0;
+    border-radius: 1.2rem;
   }
 }
 /*# sourceMappingURL=media.component.css.map */

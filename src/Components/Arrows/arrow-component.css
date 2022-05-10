@@ -1,6 +1,6 @@
 #arrows {
-  width: 100px;
-  height: 65px;
+  width: 11vw;
+  height: 10vh;
 }
 
 #arrows:hover polygon {
@@ -52,5 +52,59 @@ polygon.arrow-middle {
 
 polygon.arrow-top {
   opacity: 0.5;
+}
+
+@media screen and (max-width: 960px) {
+  #arrows {
+    width: 8vw;
+    height: 3vh;
+  }
+  #arrows:hover polygon {
+    fill: red;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+  }
+  #arrows:hover polygon.arrow-middle {
+    -webkit-transform: translateX(18px);
+            transform: translateX(18px);
+  }
+  #arrows:hover polygon.arrow-bottom {
+    -webkit-transform: translateX(36px);
+            transform: translateX(36px);
+  }
+  #arrows:hover polygon#right {
+    fill: red;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+  }
+  #arrows:hover polygon#right.arrow-middle {
+    -webkit-transform: translateX(-18px);
+            transform: translateX(-18px);
+  }
+  #arrows:hover polygon#right.arrow-bottom {
+    -webkit-transform: translateX(-36px);
+            transform: translateX(-36px);
+  }
+  .arrowRight {
+    position: relative;
+    top: -104vh;
+    left: 80vw;
+  }
+  .arrowLeft {
+    position: relative;
+    top: 18vh;
+    left: 18vw;
+  }
+  polygon {
+    fill: #FFF;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+  }
+  polygon.arrow-middle {
+    opacity: 0.75;
+  }
+  polygon.arrow-top {
+    opacity: 0.5;
+  }
 }
 /*# sourceMappingURL=arrow-component.css.map */

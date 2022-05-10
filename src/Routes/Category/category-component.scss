@@ -7,13 +7,41 @@
     color: #fff;
     text-decoration: none;
     h2{
-        padding-left: 176px;
+        padding: 0 0 2% 12vw;
     }
 }
 
 @media screen and (max-width: 960px) {
     .titleCategory {
-            text-align: center;
-            font-size: 40px;
+        text-align: center;
+        font-size: 40px;
+        position: relative;
+        top: 140px;
+    }
+
+    .secondaryStyle{
+        color: #fff;
+        text-decoration: none;
+    h2{
+        padding: 20% 0 2% 10vw;
         }
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .secondaryStyle {
+        color: #fff;
+        text-decoration: none;
+
+        h2 {
+            padding: 35% 0 2% 10vw;
+        }
+    }
+
+    .titleCategory {
+        text-align: center;
+        font-size: 40px;
+        position: relative;
+        top: 140px;
+    }
 }

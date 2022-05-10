@@ -25,7 +25,7 @@ function Media({ media, mediaType, cat }){
                 <h2 className='titleStyle'>{Category}</h2>
             </Link>
             <Link to={toRoute} state={{ media: media }}>
-                <img className='moviesSizeImage' src={Image} alt="" />
+                <img className='moviesSizeImage' src={Image} alt="Movies Image" />
             </Link>
         </div>
     )
