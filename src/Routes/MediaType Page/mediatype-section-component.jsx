@@ -103,7 +103,7 @@ function MediaTypeSection({ cat, mediatype }) {
         } else if (sectioncurrent === 13) {
             setBasicView([sectionDatabase - 4, sectionDatabase - 3, sectionDatabase - 2, sectionDatabase - 1, 0]);
             setSectionCurrent(sectioncurrent - 1);
-        } else {
+        } else {    
             setBasicView([sectioncurrent - 1, sectioncurrent, sectioncurrent + 1, sectioncurrent + 2, sectioncurrent + 3]);
             setSectionCurrent(sectioncurrent - 1);
         }
@@ -118,11 +118,11 @@ function MediaTypeSection({ cat, mediatype }) {
                 <button className='categoryBtnLeft' type='button' onClick={onSectionLeftButton}>
                     {String.fromCharCode(60)}
                 </button>
-                <Media media={database[0].db[basicView[0]]} mediaType={mediatype} cat={cat} />
-                <Media media={database[0].db[basicView[1]]} mediaType={mediatype} cat={cat} />
-                <Media media={database[0].db[basicView[2]]} mediaType={mediatype} cat={cat} />
-                <Media media={database[0].db[basicView[3]]} mediaType={mediatype} cat={cat} />
-                <Media media={database[0].db[basicView[4]]} mediaType={mediatype} cat={cat} />
+                <Media media={database[0].db[basicView[0]]} mediaType={mediatype} cat={cat} isMovieSerie = {true} />
+                <Media media={database[0].db[basicView[1]]} mediaType={mediatype} cat={cat} isMovieSerie={true} />
+                <Media media={database[0].db[basicView[2]]} mediaType={mediatype} cat={cat} isMovieSerie={true} />
+                <Media media={database[0].db[basicView[3]]} mediaType={mediatype} cat={cat} isMovieSerie={true} />
+                <Media media={database[0].db[basicView[4]]} mediaType={mediatype} cat={cat} isMovieSerie={true} />
                 <button className='categoryBtnRight' type='button' onClick={onSectionRightButton}>
                     {String.fromCharCode(62)}
                 </button>

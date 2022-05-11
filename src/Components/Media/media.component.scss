@@ -9,7 +9,15 @@
     justify-content: center;
 }
 
-.moviesSizeImage{
+.moviesSizeImage {
+    max-width: 88%;
+    height: 320px;
+    display: block;
+    padding: 0 15px;
+    border-radius: 1.5rem;
+}
+
+.imageSection{
     max-width: 88%;
     height: 320px;
     display: block;
@@ -38,11 +46,15 @@
         max-width: 20vw;
         height: 46vh;
         display: flex;
-        gap: 5px;
         flex-direction: center;
         justify-content: flex-start;
-        padding: 0 0 0 0;
+        gap: 5px;
         border-radius: 1.5rem;
+    }
+
+    .imageSection {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
     }
 }
 

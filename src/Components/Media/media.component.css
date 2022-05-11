@@ -22,6 +22,14 @@
   border-radius: 1.5rem;
 }
 
+.imageSection {
+  max-width: 88%;
+  height: 320px;
+  display: block;
+  padding: 0 15px;
+  border-radius: 1.5rem;
+}
+
 .configureLink {
   text-decoration: none;
   color: #fff;
@@ -43,7 +51,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 5px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: center;
@@ -51,8 +58,14 @@
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    padding: 0 0 0 0;
+    gap: 5px;
     border-radius: 1.5rem;
+  }
+  .imageSection {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
   }
 }
 

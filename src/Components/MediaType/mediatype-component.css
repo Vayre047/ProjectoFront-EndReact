@@ -58,7 +58,7 @@
         grid-template-columns: 1fr 1fr;
     padding: 1% 14vw 6vh 0;
     position: relative;
-    left: -3vw;
+    left: 1vw;
     gap: 12%;
   }
   .moviesTitle {

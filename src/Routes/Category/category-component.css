@@ -25,6 +25,7 @@
   }
   .secondaryStyle h2 {
     padding: 20% 0 2% 10vw;
+    font-size: 34px;
   }
 }
 
@@ -35,12 +36,15 @@
   }
   .secondaryStyle h2 {
     padding: 35% 0 2% 10vw;
+    text-align: center;
+    position: relative;
+    right: 3vw;
   }
   .titleCategory {
     text-align: center;
     font-size: 40px;
     position: relative;
-    top: 140px;
+    top: 20vh;
   }
 }
 /*# sourceMappingURL=category-component.css.map */

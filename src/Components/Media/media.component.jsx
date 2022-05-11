@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import './media.component.scss';
 
-function Media({ media, mediaType, cat }){
+function Media({ media, mediaType, cat, isMovieSerie }){
     const { Image, Id, Category } = media;
 
     let catState = cat;
@@ -25,7 +25,7 @@ function Media({ media, mediaType, cat }){
                 <h2 className='titleStyle'>{Category}</h2>
             </Link>
             <Link to={toRoute} state={{ media: media }}>
-                <img className='moviesSizeImage' src={Image} alt="Movies Image" />
+                <img className={`${isMovieSerie ? 'imageSection' : 'moviesSizeImage' }`} src={Image} alt="Movies Image" />
             </Link>
         </div>
     )
