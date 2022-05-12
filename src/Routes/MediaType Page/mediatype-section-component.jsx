@@ -20,14 +20,23 @@ import { seriesRomance } from '../../Components/Line/Series DB/series-romance-db
 import { seriesSuspanse } from '../../Components/Line/Series DB/series-suspanse-db';
 import { seriesTerror } from '../../Components/Line/Series DB/series-terror-db';
 import { seriesThriller } from '../../Components/Line/Series DB/series-thriller-db';
-import { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Media from '../../Components/Media/media.component';
 import { Link } from 'react-router-dom';
 import './mediatype-section-component.scss';
 
 function MediaTypeSection({ cat, mediatype }) {
-    const [basicView, setBasicView] = useState([0, 1, 2, 3, 4]);
-    const [sectioncurrent, setSectionCurrent] = useState(0);
+    const [view, setView] = useState([0, 1, 2, 3]);
+    const [current, setCurrent] = useState(0);
+    const [width, setWidth] = useState(window.innerWidth);
+    const updateWidth = () => {
+        setWidth(window.innerWidth);
+    }
+
+    useEffect(() => {
+        window.addEventListener("resize", updateWidth);
+        return () => window.removeEventListener("resize", updateWidth);
+    });
 
     let database = [];
 
@@ -71,43 +80,41 @@ function MediaTypeSection({ cat, mediatype }) {
 
     const sectionDatabase = database[0].db.length;
 
+
     const onSectionLeftButton = (event) => {
-        if (sectioncurrent === 11) {
-            setBasicView([sectioncurrent + 1, sectioncurrent + 2, sectioncurrent + 3, sectioncurrent + 4, 0]);
-            setSectionCurrent(sectioncurrent + 1);
-        } else if (sectioncurrent === 12) {
-            setBasicView([sectioncurrent + 1, sectioncurrent + 2, sectioncurrent + 3, 0, 1]);
-            setSectionCurrent(sectioncurrent + 1);
-        } else if (sectioncurrent === 13) {
-            setBasicView([sectioncurrent + 1, sectioncurrent + 2, 0, 1, 2]);
-            setSectionCurrent(sectioncurrent + 1);
-        } else if (sectioncurrent === 14) {
-            setBasicView([sectioncurrent + 1, 0, 1, 2, 3]);
-            setSectionCurrent(0);
+        if (current === 12) {
+            setView([current + 1, current + 2, current + 3, 0]);
+            setCurrent(current + 1);
+        } else if (current === 13) {
+            setView([current + 1, current + 2, 0, 1]);
+            setCurrent(current + 1);
+        } else if (current === 14) {
+            setView([current + 1, 0, 1, 2]);
+            setCurrent(0);
         } else {
-            setBasicView([sectioncurrent + 1, sectioncurrent + 2, sectioncurrent + 3, sectioncurrent + 4, sectioncurrent + 5]);
-            setSectionCurrent(sectioncurrent + 1);
+            setView([current + 1, current + 2, current + 3, current + 4]);
+            setCurrent(current + 1);
         }
     }
 
     const onSectionRightButton = (event) => {
-        if (sectioncurrent === 0) {
-            setBasicView([sectionDatabase - 1, sectioncurrent, sectioncurrent + 1, sectioncurrent + 2, sectioncurrent + 3]);
-            setSectionCurrent(sectionDatabase - 1);
-        } else if (sectioncurrent === 15) {
-            setBasicView([sectionDatabase - 2, sectionDatabase - 1, 0, 1, 2]);
-            setSectionCurrent(sectioncurrent - 1);
-        } else if (sectioncurrent === 14) {
-            setBasicView([sectionDatabase - 3, sectionDatabase - 2, sectionDatabase - 1, 0, 1]);
-            setSectionCurrent(sectioncurrent - 1);
-        } else if (sectioncurrent === 13) {
-            setBasicView([sectionDatabase - 4, sectionDatabase - 3, sectionDatabase - 2, sectionDatabase - 1, 0]);
-            setSectionCurrent(sectioncurrent - 1);
-        } else {    
-            setBasicView([sectioncurrent - 1, sectioncurrent, sectioncurrent + 1, sectioncurrent + 2, sectioncurrent + 3]);
-            setSectionCurrent(sectioncurrent - 1);
+        if (current === 0) {
+            setView([sectionDatabase - 1, current, current + 1, current + 2]);
+            setCurrent(sectionDatabase - 1);
+        } else if (current === 15) {
+            setView([sectionDatabase - 2, sectionDatabase - 1, 0, 1]);
+            setCurrent(current - 1);
+        } else if (current === 14) {
+            setView([sectionDatabase - 3, sectionDatabase - 2, sectionDatabase - 1, 0]);
+            setCurrent(current - 1);
+        } else {
+            setView([current - 1, current, current + 1, current + 2]);
+            setCurrent(current - 1);
         }
     }
+
+    console.log(view);
+    console.log(database[0].db[view[0]])
 
     return (
         <div className='mediatypeSpacing'>
@@ -118,11 +125,10 @@ function MediaTypeSection({ cat, mediatype }) {
                 <button className='categoryBtnLeft' type='button' onClick={onSectionLeftButton}>
                     {String.fromCharCode(60)}
                 </button>
-                <Media media={database[0].db[basicView[0]]} mediaType={mediatype} cat={cat} isMovieSerie = {true} />
-                <Media media={database[0].db[basicView[1]]} mediaType={mediatype} cat={cat} isMovieSerie={true} />
-                <Media media={database[0].db[basicView[2]]} mediaType={mediatype} cat={cat} isMovieSerie={true} />
-                <Media media={database[0].db[basicView[3]]} mediaType={mediatype} cat={cat} isMovieSerie={true} />
-                <Media media={database[0].db[basicView[4]]} mediaType={mediatype} cat={cat} isMovieSerie={true} />
+                <Media media={database[0].db[view[0]]} mediaType={mediatype} cat={cat} isMovieSerie = {true} />
+                <Media media={database[0].db[view[1]]} mediaType={mediatype} cat={cat} isMovieSerie={true} />
+                <Media media={database[0].db[view[2]]} mediaType={mediatype} cat={cat} isMovieSerie={true} />
+                <Media media={database[0].db[view[3]]} mediaType={mediatype} cat={cat} isMovieSerie={true} />
                 <button className='categoryBtnRight' type='button' onClick={onSectionRightButton}>
                     {String.fromCharCode(62)}
                 </button>

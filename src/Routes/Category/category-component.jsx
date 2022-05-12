@@ -24,7 +24,6 @@ import { seriesThriller } from '../../Components/Line/Series DB/series-thriller-
 import Line from '../../Components/Line/line-component';
 import { Dropdown } from '../Header/NavBar/dropdown-db';
 import './category-component.scss'
-import { useEffect, useState } from 'react';
 
 function Category(){
     // Receive from Media Component the location of objects for current url /category
