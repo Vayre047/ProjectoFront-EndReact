@@ -25,7 +25,7 @@ function Media({ media, mediaType, cat, isMovieSerie }){
                 <h2 className='titleStyle'>{Category}</h2>
             </Link>
             <Link to={toRoute} state={{ media: media }}>
-                <img className={`${isMovieSerie ? 'imageSection' : 'moviesSizeImage' }`} src={Image} alt="Movies Image" />
+                <img className="imageSection" src={Image} alt="Movies Image" />
             </Link>
         </div>
     )

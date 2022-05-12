@@ -28,6 +28,7 @@
     width: 175px;
     height: 200px;
     position: relative;
+    top: 130px;
     left: 29%;
   }
   .userDetails {

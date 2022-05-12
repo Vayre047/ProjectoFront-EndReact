@@ -14,17 +14,9 @@
           justify-content: center;
 }
 
-.moviesSizeImage {
-  max-width: 88%;
-  height: 320px;
-  display: block;
-  padding: 0 15px;
-  border-radius: 1.5rem;
-}
-
 .imageSection {
-  max-width: 88%;
-  height: 320px;
+  width: 220px;
+  height: auto;
   display: block;
   padding: 0 15px;
   border-radius: 1.5rem;
@@ -36,77 +28,36 @@
 }
 
 @media screen and (max-width: 960px) {
-  .titleStyle {
-    text-align: center;
-    padding: 0 0 15% 40%;
-  }
   .moviesPosition {
     display: block;
-    text-align: center;
-    width: 70%;
-  }
-  .moviesSizeImage {
-    max-width: 20vw;
-    height: 46vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: center;
-            flex-direction: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    gap: 5px;
-    border-radius: 1.5rem;
-  }
-  .imageSection {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
+/*
 @media screen and (max-width: 479px) {
-  .titleStyle {
-    text-align: center;
-    padding: 0 7% 10% 0;
-  }
-  .moviesPosition {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .moviesSizeImage {
-    max-width: 30vw;
-    height: 36vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0 0 5vh 17vw;
-    border-radius: 0.6rem;
-  }
-  .imageSection {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 1fr;
+    .titleStyle {
+        text-align: center;
+        padding: 0 7% 10% 0;
+    }
+
+    .moviesPosition {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .moviesSizeImage {
+        max-width: 30vw;
+        height: 28vh;
+        padding: 0 0 5vh 17vw;
+        border-radius: 0.6rem;
+    }
+
+    .imageSection {
+        display: grid;
         grid-template-rows: 1fr;
-  }
-}
+    }
+}*/
 /*# sourceMappingURL=media.component.css.map */

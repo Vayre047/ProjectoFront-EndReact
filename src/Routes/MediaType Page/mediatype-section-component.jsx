@@ -113,26 +113,26 @@ function MediaTypeSection({ cat, mediatype }) {
         }
     }
 
-    console.log(view);
-    console.log(database[0].db[view[0]])
-
     return (
         <div className='mediatypeSpacing'>
             <Link className='linkCategory' to='/category' state={{ cat: cat, mediatype: mediatype }} >
                 <h3 className="categoryPosition">{cat}</h3>
             </Link>
-            <div className='viewPosition'>
-                <button className='categoryBtnLeft' type='button' onClick={onSectionLeftButton}>
+            <div className='gridContainer'>
+                <button className='catBtn categoryBtnLeft' type='button' onClick={onSectionLeftButton}>
                     {String.fromCharCode(60)}
                 </button>
-                <Media media={database[0].db[view[0]]} mediaType={mediatype} cat={cat} isMovieSerie = {true} />
-                <Media media={database[0].db[view[1]]} mediaType={mediatype} cat={cat} isMovieSerie={true} />
-                <Media media={database[0].db[view[2]]} mediaType={mediatype} cat={cat} isMovieSerie={true} />
-                <Media media={database[0].db[view[3]]} mediaType={mediatype} cat={cat} isMovieSerie={true} />
-                <button className='categoryBtnRight' type='button' onClick={onSectionRightButton}>
+                <div className='viewPosition'>
+                        <Media media={database[0].db[view[0]]} mediaType={mediatype} cat={cat} isMovieSerie = {true} />
+                        <Media media={database[0].db[view[1]]} mediaType={mediatype} cat={cat} isMovieSerie={true} />
+                        <Media media={database[0].db[view[2]]} mediaType={mediatype} cat={cat} isMovieSerie={true} />
+                        <Media media={database[0].db[view[3]]} mediaType={mediatype} cat={cat} isMovieSerie={true} />
+                </div>
+                <button className='catBtn categoryBtnRight' type='button' onClick={onSectionRightButton}>
                     {String.fromCharCode(62)}
                 </button>
             </div>
+            
         </div>
     )
 }

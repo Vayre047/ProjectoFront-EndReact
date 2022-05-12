@@ -1,8 +1,6 @@
 import './mediatype-component.scss';
 import { useState } from 'react';
-import MediaLine from './medialine-component';
-import RightArrow from '../Arrows/right-arrow-component';
-import LeftArrow from '../Arrows/left-arrow-component';
+import Media from '../Media/media.component';
 
 function MediaType({ Movies, Series } ){
     // state variables saving initial images positions and current (index of first view pos)
@@ -77,33 +75,40 @@ function MediaType({ Movies, Series } ){
         }
     }
 
-    const mediaMoviesArray = [Movies[view[0]], Movies[view[1]], Movies[view[2]], Movies[view[3]]];
-    const mediaSeriesArray = [Series[secondView[0]], Series[secondView[1]], Series[secondView[2]], Series[secondView[3]]];
-
     return(
         <div>
             <div>
                 <h1 className='moviesTitle'>Filmes</h1>
-                <div className='viewPosition'>
-                    <button className='firsBtnLeft' type='button' onClick={onMoviesLeftButton}>
-                        <LeftArrow />
+                <div className='gridContainer'>
+                    <button className='catBtn categoryBtnLeft btnLeft' type='button' onClick={onMoviesLeftButton}>
+                        {String.fromCharCode(60)}
                     </button>
-                    {/* Call Media component with first, ... position of Movies db */}
-                    <MediaLine media={ mediaMoviesArray } mediaType={'Filmes'} />
-                    <button className='firsBtnRight' type='button' onClick={onMoviesRightButton}>
-                        <RightArrow />
+                    <div className='viewPosition'>
+                        {/* Call Media component with first, ... position of Movies db */}
+                        <Media media={Movies[view[0]]} mediaType={'Filmes'} cat={''} isMovieSerie={false} />
+                        <Media media={Movies[view[1]]} mediaType={'Filmes'} cat={''} isMovieSerie={false} />
+                        <Media media={Movies[view[2]]} mediaType={'Filmes'} cat={''} isMovieSerie={false} />
+                        <Media media={Movies[view[3]]} mediaType={'Filmes'} cat={''} isMovieSerie={false} />
+                    </div>
+                    <button className='catBtn categoryBtnRight btnRight' type='button' onClick={onMoviesRightButton}>
+                        {String.fromCharCode(62)}
                     </button>
                 </div>
             </div>
             <div>
                 <h1 className='moviesTitle'>Séries</h1>
-                <div className='viewPosition'>
-                    <button className='firsBtnLeft' type='button' onClick={onSeriesLeftButton}>
-                        <LeftArrow />
+                <div className='gridContainer'>
+                    <button className='catBtn categoryBtnLeft' type='button' onClick={onSeriesLeftButton}>
+                        {String.fromCharCode(60)}
                     </button>
-                    <MediaLine media={mediaSeriesArray} mediaType={'Series'} />
-                    <button className='firsBtnRight' type='button' onClick={onSeriesRightButton}>
-                        <RightArrow />
+                    <div className='viewPosition'>
+                        <Media media={Series[secondView[0]]} mediaType={'Series'} cat={''} isMovieSerie={false} />
+                        <Media media={Series[secondView[1]]} mediaType={'Series'} cat={''} isMovieSerie={false} />
+                        <Media media={Series[secondView[2]]} mediaType={'Series'} cat={''} isMovieSerie={false} />
+                        <Media media={Series[secondView[3]]} mediaType={'Series'} cat={''} isMovieSerie={false} />
+                    </div>
+                    <button className='catBtn categoryBtnRight' type='button' onClick={onSeriesRightButton}>
+                        {String.fromCharCode(62)}
                     </button>
                 </div>
             </div>

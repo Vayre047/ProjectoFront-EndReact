@@ -1,39 +1,35 @@
 .categoryPosition {
     font-size: 32px;
     position: relative;
-    left: 176px;
-    padding-top: 32px;
+    left: 19vw;
+    padding: 5vh 0 2vh 0;
+}
+
+.catBtn{
+    gap: 5px;
+    width: 3.5%;
+    height: 5%;
+    position: relative;
+    font-weight: 600;
+    font-size: 28px;
+    padding-left: 35%;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
 }
 
 .categoryBtnLeft{
-    gap: 5px;
-    width: 3.5%;
-    height: 5%;
-    position: relative;
     top: 160px;
-    line-height: end;
-    border: none;
-    font-weight: 600;
-    font-size: 28px;
-    padding-right: 5%;
-    background-color: transparent;
-    color: #fff;
-    cursor: pointer;
 }
 
 .categoryBtnRight{
-    gap: 5px;
-    width: 3.5%;
-    height: 5%;
-    position: relative;
     top: 10rem;
-    border: none;
-    font-weight: 600;
-    font-size: 28px;
-    padding-left: 5%;
-    background-color: transparent;
-    color: #fff;
-    cursor: pointer;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
 }
 
 .linkCategory{
@@ -55,41 +51,17 @@
         padding: 20vh 0 0 0;
     }
 
-        
     .categoryBtnLeft {
-        gap: 5px;
-        width: 3.5%;
-        height: 5%;
-        position: relative;
-        top: 23vh;
-        line-height: end;
-        border: none;
-        font-weight: 600;
-        font-size: 28px;
-        padding-right: 5%;
-        background-color: transparent;
-        color: #fff;
-        cursor: pointer;
+        top: 49vh;
     }
-
     
     .categoryBtnRight {
-        gap: 5px;
-        width: 3.5%;
-        height: 5%;
-        position: relative;
-        top: 23vh;
-        border: none;
-        font-weight: 600;
-        font-size: 28px;
-        padding-left: 5%;
-        background-color: transparent;
-        color: #fff;
-        cursor: pointer;
+        top: 49vh;
+        left: 4vw;
     }
 
 }
-
+/*
 @media screen and (max-width: 479px) {
     .categoryPosition {
         font-size: 32px;
@@ -136,4 +108,4 @@
         color: #fff;
         cursor: pointer;
     }
-}
+}*/
