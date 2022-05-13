@@ -9,7 +9,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1000px) {
   .imageProfile {
     width: 225px;
     height: 230px;
@@ -23,7 +23,7 @@
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 520px) {
   .imageProfile {
     width: 175px;
     height: 200px;

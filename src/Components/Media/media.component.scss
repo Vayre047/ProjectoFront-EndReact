@@ -22,34 +22,17 @@
     color: #fff;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1000px) {
     .moviesPosition {
        display: block;
        justify-content: center;
     }
 }
 
-/*
-@media screen and (max-width: 479px) {
-    .titleStyle {
-        text-align: center;
-        padding: 0 7% 10% 0;
-    }
 
-    .moviesPosition {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .moviesSizeImage {
-        max-width: 30vw;
-        height: 28vh;
-        padding: 0 0 5vh 17vw;
-        border-radius: 0.6rem;
-    }
-
+@media screen and (max-width: 520px) {
     .imageSection {
-        display: grid;
-        grid-template-rows: 1fr;
+        width: 120px;
+        height: auto;
     }
-}*/
+}

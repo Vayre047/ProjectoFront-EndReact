@@ -80,7 +80,7 @@ function MediaType({ Movies, Series } ){
             <div>
                 <h1 className='moviesTitle'>Filmes</h1>
                 <div className='gridContainer'>
-                    <button className='catBtn categoryBtnLeft btnLeft' type='button' onClick={onMoviesLeftButton}>
+                    <button className='catBtn categoryBtnLeft' type='button' onClick={onMoviesLeftButton}>
                         {String.fromCharCode(60)}
                     </button>
                     <div className='viewPosition'>
@@ -90,7 +90,7 @@ function MediaType({ Movies, Series } ){
                         <Media media={Movies[view[2]]} mediaType={'Filmes'} cat={''} isMovieSerie={false} />
                         <Media media={Movies[view[3]]} mediaType={'Filmes'} cat={''} isMovieSerie={false} />
                     </div>
-                    <button className='catBtn categoryBtnRight btnRight' type='button' onClick={onMoviesRightButton}>
+                    <button className='catBtn categoryBtnRight' type='button' onClick={onMoviesRightButton}>
                         {String.fromCharCode(62)}
                     </button>
                 </div>

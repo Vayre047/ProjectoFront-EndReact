@@ -79,7 +79,7 @@
   background-color: #990000;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1000px) {
   .inputFields {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -111,7 +111,7 @@
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 520px) {
   .inputFields {
     display: -webkit-box;
     display: -ms-flexbox;

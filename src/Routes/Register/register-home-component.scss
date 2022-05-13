@@ -66,10 +66,19 @@
     padding: 15px 0 5px 0;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1000px) {
     .imagePosition {
         width: auto;
         height: 137.5px;
+    }
+
+    .registerTitle {
+        background: url('../../../public/images/TBAFlix_Header.jpg') no-repeat center/cover;
+        text-align: center;
+        background-color: #000;
+        color: #fff;
+        height: 0%;
+        padding: 120px 0 0 0;
     }
 
     .subTitleRegister {
@@ -94,35 +103,6 @@
         font-size: 24px;
         padding: 0 0 10px 0;
     }
-}
-
-@media screen and (max-width: 960px) {
-    .imagePosition {
-        width: auto;
-        height: 137.5px;
-    }
-
-    .registerTitle {
-        background: url('../../../public/images/TBAFlix_Header.jpg') no-repeat center/cover;
-        text-align: center;
-        background-color: #000;
-        color: #fff;
-        height: 0%;
-        padding: 120px 0 0 0;
-    }
-
-    .formationText {
-        font-size: 10px;
-        padding: 15px 0 5px 0;
-    }
-
-    .registerInput {
-        width: 24%;
-        height: 42.5px;
-        font-size: 15px;
-        padding-left: 1%;
-        outline: transparent;
-    }
 
     .registerLink {
         text-decoration: none;
@@ -146,7 +126,7 @@
     }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 520px) {
     .imagePosition {
         width: auto;
         height: 68.5px;

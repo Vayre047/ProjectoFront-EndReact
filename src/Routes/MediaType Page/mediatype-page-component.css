@@ -4,4 +4,12 @@
   padding-top: 8px;
   padding-bottom: 8px;
 }
+
+@media screen and (max-width: 520px) {
+  .titleCategory {
+    position: relative;
+    top: 15vh;
+    padding-bottom: 50px;
+  }
+}
 /*# sourceMappingURL=mediatype-page-component.css.map */

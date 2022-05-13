@@ -58,13 +58,13 @@
     background-color: #990000;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1000px) {
     .inputFields {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 280px;
-            padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 280px;
+        padding-top: 40px;
     }
 
     .registerButton {
@@ -83,13 +83,13 @@
     }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 520px) {
     .inputFields {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 160px;
-            padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 160px;
+        padding-top: 80px;
     }
 
     .registerButton {

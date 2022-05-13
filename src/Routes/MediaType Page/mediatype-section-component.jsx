@@ -113,6 +113,7 @@ function MediaTypeSection({ cat, mediatype }) {
         }
     }
 
+    console.log(width + ' ' +typeof(width))
     return (
         <div className='mediatypeSpacing'>
             <Link className='linkCategory' to='/category' state={{ cat: cat, mediatype: mediatype }} >
@@ -123,10 +124,10 @@ function MediaTypeSection({ cat, mediatype }) {
                     {String.fromCharCode(60)}
                 </button>
                 <div className='viewPosition'>
-                        <Media media={database[0].db[view[0]]} mediaType={mediatype} cat={cat} isMovieSerie = {true} />
-                        <Media media={database[0].db[view[1]]} mediaType={mediatype} cat={cat} isMovieSerie={true} />
-                        <Media media={database[0].db[view[2]]} mediaType={mediatype} cat={cat} isMovieSerie={true} />
-                        <Media media={database[0].db[view[3]]} mediaType={mediatype} cat={cat} isMovieSerie={true} />
+                    <Media media={database[0].db[view[0]]} mediaType={mediatype} cat={cat} isMovieSerie = {true} />
+                    <Media media={database[0].db[view[1]]} mediaType={mediatype} cat={cat} isMovieSerie={true} />
+                    <Media media={database[0].db[view[2]]} mediaType={mediatype} cat={cat} isMovieSerie={true} />
+                    <Media media={database[0].db[view[3]]} mediaType={mediatype} cat={cat} isMovieSerie={true} />
                 </div>
                 <button className='catBtn categoryBtnRight' type='button' onClick={onSectionRightButton}>
                     {String.fromCharCode(62)}

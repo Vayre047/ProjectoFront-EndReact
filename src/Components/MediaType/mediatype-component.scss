@@ -12,7 +12,7 @@
     justify-content: center;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1000px) {
     .viewPosition {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -30,8 +30,8 @@
         color: #fff;
     }
 }
-/*
-@media screen and (max-width: 479px) {
+
+@media screen and (max-width: 520px) {
     .moviesTitle {
             text-align: center;
             font-size: 24px;
@@ -39,10 +39,4 @@
             background-color: #000;
             color: #fff;
         }
-
-    .viewPosition {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-}*/
+}

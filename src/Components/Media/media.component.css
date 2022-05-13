@@ -27,7 +27,7 @@
   color: #fff;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1000px) {
   .moviesPosition {
     display: block;
     -webkit-box-pack: center;
@@ -36,28 +36,10 @@
   }
 }
 
-/*
-@media screen and (max-width: 479px) {
-    .titleStyle {
-        text-align: center;
-        padding: 0 7% 10% 0;
-    }
-
-    .moviesPosition {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .moviesSizeImage {
-        max-width: 30vw;
-        height: 28vh;
-        padding: 0 0 5vh 17vw;
-        border-radius: 0.6rem;
-    }
-
-    .imageSection {
-        display: grid;
-        grid-template-rows: 1fr;
-    }
-}*/
+@media screen and (max-width: 520px) {
+  .imageSection {
+    width: 120px;
+    height: auto;
+  }
+}
 /*# sourceMappingURL=media.component.css.map */
