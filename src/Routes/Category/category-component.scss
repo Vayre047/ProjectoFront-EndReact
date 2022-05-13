@@ -13,15 +13,11 @@
 
 @media screen and (max-width: 1000px) {
     .titleCategory {
-        text-align: center;
-        font-size: 40px;
         position: relative;
         top: 140px;
     }
 
     .secondaryStyle{
-        color: #fff;
-        text-decoration: none;
     h2{
         padding: 20% 0 2% 10vw;
         font-size: 34px;
@@ -31,9 +27,6 @@
 
 @media screen and (max-width: 520px) {
     .secondaryStyle {
-        color: #fff;
-        text-decoration: none;
-
         h2 {
             padding: 35% 0 2% 10vw;
             text-align: center;
@@ -43,8 +36,6 @@
     }
 
     .titleCategory {
-        text-align: center;
-        font-size: 40px;
         position: relative;
         top: 20vh;
     }

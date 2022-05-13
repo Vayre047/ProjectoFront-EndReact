@@ -5,23 +5,17 @@
     left: 40%;
 }
 
-.userDetails{
-    text-align: center;
-}
+.userDetails{text-align: center;}
 
 @media screen and (max-width: 1000px) {
     .imageProfile {
         width: 225px;
         height: 230px;
-        position: relative;
         top: 130px;
         left: 37%;
     }
 
-    .userDetails {
-        text-align: center;
-        padding: 20% 0 0 0;
-    }
+    .userDetails {padding: 20% 0 0 0;}
 }
 
 @media screen and (max-width: 520px) {
@@ -33,7 +27,5 @@
         left: 29%;
     }
 
-    .userDetails {
-        text-align: center;
-    }
+    .userDetails {text-align: center;}
 }

@@ -29,14 +29,7 @@
 
 @media screen and (max-width: 520px) {
   .mainLine {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0 0 2% 30%;
+    padding: 0 0 2% 6.5%;
     gap: 0.5%;
   }
 }

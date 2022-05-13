@@ -81,65 +81,25 @@
 
 @media screen and (max-width: 1000px) {
   .inputFields {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     width: 280px;
     padding-top: 40px;
   }
   .registerButton {
-    font-family: Comic Sans, Comic Sans MS, cursive;
     font-size: 15px;
-    font-weight: 700;
-    background-color: #ff0000;
-    outline: #ff0000;
-    border: none;
-    border-radius: 10px;
-    margin: auto;
     width: 280px;
     height: 45px;
-    color: #fff;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
   }
 }
 
 @media screen and (max-width: 520px) {
   .inputFields {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     width: 160px;
     padding-top: 80px;
   }
   .registerButton {
-    font-family: Comic Sans, Comic Sans MS, cursive;
     font-size: 14px;
-    font-weight: 700;
-    background-color: #ff0000;
-    outline: #ff0000;
-    border: none;
-    border-radius: 10px;
-    margin: auto;
     width: 160px;
     height: 45px;
-    color: #fff;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
   }
 }
 /*# sourceMappingURL=register-component.css.map */

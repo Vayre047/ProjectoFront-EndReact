@@ -12,9 +12,7 @@
     padding: 80px 0 0 0;
 }
 
-.registerContainer {
-    padding: 20px 0 0 0;
-}
+.registerContainer {padding: 20px 0 0 0;}
 
 .registerInput{
     width: 32%;
@@ -37,9 +35,7 @@
     text-decoration: none;
 }
 
-.registerBTN:hover {
-    background-color: #990000;
-}
+.registerBTN:hover {background-color: #990000;}
 
 .registerLink{
     text-decoration: none;
@@ -48,9 +44,7 @@
     color: #fff;
 }
 
-.registerLink:hover {
-    background-color: #990000;
-}
+.registerLink:hover {background-color: #990000;}
 
 .textLoggedIn {
     text-align: center;
@@ -58,28 +52,14 @@
     padding: 5px 0 0 0;
 }
 
-.titleRegister {
-    padding: 35px 0 10px 0;
-}
+.titleRegister {padding: 35px 0 10px 0;}
 
-.formationText {
-    padding: 15px 0 5px 0;
-}
+.formationText {padding: 15px 0 5px 0;}
 
 @media screen and (max-width: 1000px) {
-    .imagePosition {
-        width: auto;
-        height: 137.5px;
-    }
+    .imagePosition { height: 137.5px;}
 
-    .registerTitle {
-        background: url('../../../public/images/TBAFlix_Header.jpg') no-repeat center/cover;
-        text-align: center;
-        background-color: #000;
-        color: #fff;
-        height: 0%;
-        padding: 120px 0 0 0;
-    }
+    .registerTitle {padding: 120px 0 0 0;}
 
     .subTitleRegister {
         padding: -20 0 0 0;
@@ -95,8 +75,6 @@
         width: 24%;
         height: 42.5px;
         font-size: 10px;
-        padding-left: 1%;
-        outline: transparent;
     }
 
     .titleRegister {
@@ -105,40 +83,18 @@
     }
 
     .registerLink {
-        text-decoration: none;
         height: 42.5px;
-        background-color: #ff0000;
-        color: #fff;
         font-size: 12px;
     }
 
     .registerBTN {
-        width: 9%;
         height: 47.5px;
         font-size: 12px;
-        font-weight: 600;
-        background-color: #ff0000;
-        border: none;
-        border-radius: 3px;
-        transition: 1s;
-        cursor: pointer;
-        text-decoration: none;
-    }
+        }
 }
 
 @media screen and (max-width: 520px) {
-    .imagePosition {
-        width: auto;
-        height: 68.5px;
-    }
-
-    .registerInput {
-        width: 32%;
-        height: 60.5px;
-        font-size: 16px;
-        padding-left: 1%;
-        outline: transparent;
-    }
+    .imagePosition {height: 68.5px;}
 
     .registerInput {
         width: 0;
@@ -148,23 +104,12 @@
     }
 
     .registerLink {
-        text-decoration: none;
         height: 42.5px;
-        background-color: #ff0000;
-        color: #fff;
         font-size: 12px;
     }
 
     .registerBTN {
         width: 18%;
         height: 47.5px;
-        font-size: 12px;
-        font-weight: 600;
-        background-color: #ff0000;
-        border: none;
-        border-radius: 3px;
-        transition: 1s;
-        cursor: pointer;
-        text-decoration: none;
     }
 }

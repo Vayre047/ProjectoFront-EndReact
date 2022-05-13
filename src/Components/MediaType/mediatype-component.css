@@ -32,14 +32,11 @@
     gap: 1%;
   }
   .moviesTitle {
-    text-align: center;
     font-size: 32px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     padding: 3% 0 0 0;
-    background-color: #000;
-    color: #fff;
   }
 }
 
@@ -48,8 +45,6 @@
     text-align: center;
     font-size: 24px;
     padding-top: 3%;
-    background-color: #000;
-    color: #fff;
   }
 }
 /*# sourceMappingURL=mediatype-component.css.map */

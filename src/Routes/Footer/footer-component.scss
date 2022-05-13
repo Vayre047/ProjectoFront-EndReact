@@ -21,21 +21,6 @@
     .footer-container {
         text-align: center;
         padding: 5% 0 1.75% 0;
-
-        &-items {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 1%;
-        }
-    }
-
-    .detailsContainer {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 10px;
-        padding: 1% 0 1% 0;
     }
 }
 
@@ -43,20 +28,5 @@
     .footer-container {
         text-align: center;
         padding: 15% 0 1.25% 0;
-
-        &-items {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 1%;
-        }
     }
-
-    .detailsContainer {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 15px;
-            padding: 1% 0 1% 0;
-        }
 }
