@@ -13,9 +13,7 @@
     justify-content: center;
 }
 
-.labelForm{
-    padding: 20px 0 0 0;
-}
+.labelForm{padding: 20px 0 0 0;}
 
 .inputFields{
     display: flex;
@@ -54,9 +52,7 @@
     transition: 0.5s;
 }
 
-.registerButton:hover {
-    background-color: #990000;
-}
+.registerButton:hover {background-color: #990000;}
 
 @media screen and (max-width: 1000px) {
     .inputFields {

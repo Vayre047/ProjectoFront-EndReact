@@ -113,7 +113,7 @@ function MediaTypeSection({ cat, mediatype }) {
         }
     }
 
-    console.log(width + ' ' +typeof(width))
+    console.log(width + ' ' + typeof(width))
     return (
         <div className='mediatypeSpacing'>
             <Link className='linkCategory' to='/category' state={{ cat: cat, mediatype: mediatype }} >

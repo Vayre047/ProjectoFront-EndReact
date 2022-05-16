@@ -19,13 +19,9 @@
     cursor: pointer;
 }
 
-.categoryBtnLeft{
-    top: 160px;
-}
+.categoryBtnLeft{top: 200px; left: 20%;}
 
-.categoryBtnRight{
-    top: 10rem;
-}
+.categoryBtnRight{top: 200px;}
 
 .gridContainer{
     display: grid;
@@ -51,26 +47,16 @@
         padding: 20vh 0 0 0;
     }
 
-    .categoryBtnLeft {
-        top: 62vh;
-    }
+    .categoryBtnLeft {top: 62vh;}
     
-    .categoryBtnRight {
-        top: 62vh;
-    }
+    .categoryBtnRight {top: 62vh;}
 
 }
 
 @media screen and (max-width: 520px) {
-    .mediatypeSpacing {
-        padding: 5vh 0 0 0;
-    }
+    .mediatypeSpacing {padding: 5vh 0 0 0;}
 
-    .categoryBtnLeft {
-        top: 36vh;
-    }
+    .categoryBtnLeft {top: 36vh;}
 
-    .categoryBtnRight {
-        top: 36vh;
-    }
+    .categoryBtnRight {top: 36vh;}
 }

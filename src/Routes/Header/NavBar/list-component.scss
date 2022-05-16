@@ -20,22 +20,16 @@
         text-decoration: none;
         color: #fff;
     }
-    button{
-        cursor: pointer;
-    }
+    button{cursor: pointer;}
 }
 
-.menuItems:nth-child(3) {
-    padding-left: 37.5rem;
-}
+.menuItems:nth-child(3) {padding-left: 37.5rem;}
 
 .loginButton{
     background-color: #ff0000;
     border: #ff0000;
     transition: 0.5s;
-    &:hover{
-        background-color: #990000;
-    }
+    &:hover{background-color: #990000;}
 }
 
 .userProfile{

@@ -20,11 +20,12 @@
 }
 
 .categoryBtnLeft {
-  top: 160px;
+  top: 200px;
+  left: 20%;
 }
 
 .categoryBtnRight {
-  top: 10rem;
+  top: 200px;
 }
 
 .gridContainer {
