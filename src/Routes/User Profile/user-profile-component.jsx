@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import './user-profile-component.scss';
 
 function UserProfile(){
-    const { isLoggedIn, currentUser } = useContext(UserContext);
+    const { currentUser } = useContext(UserContext);
     const { firstName, lastName, username, email, date } = currentUser; 
 
     return(

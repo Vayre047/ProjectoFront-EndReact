@@ -1,6 +1,6 @@
-import './login-component.scss';
 import { useContext, useState } from 'react';
 import { UserContext } from '../../Context/user-context';
+import './login-component.scss';
 
 function LogIn(){
 

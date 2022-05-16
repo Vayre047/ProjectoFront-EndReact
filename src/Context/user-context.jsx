@@ -9,11 +9,12 @@ export const UserContext = createContext({
 export const UserProvider = ({ children }) => {
     const [ currentUser, setCurrentUser ] = useState({});
     const [ isLoggedIn, setIsLoggedIn ] = useState( false );
+    const [width, setWidth] = useState(window.innerWidth);
 
     /*const login =(email, password) => {
         setLogin(true);
     }*/
-    const value = { currentUser, setCurrentUser, isLoggedIn, setIsLoggedIn };
+    const value = { currentUser, setCurrentUser, isLoggedIn, setIsLoggedIn, width, setWidth };
 
     return <UserContext.Provider value={value}>{ children }</UserContext.Provider>
 }

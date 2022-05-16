@@ -20,7 +20,8 @@ import { seriesRomance } from '../../Components/Line/Series DB/series-romance-db
 import { seriesSuspanse } from '../../Components/Line/Series DB/series-suspanse-db';
 import { seriesTerror } from '../../Components/Line/Series DB/series-terror-db';
 import { seriesThriller } from '../../Components/Line/Series DB/series-thriller-db';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
+import { UserContext } from '../../Context/user-context';
 import Media from '../../Components/Media/media.component';
 import { Link } from 'react-router-dom';
 import './mediatype-section-component.scss';
@@ -28,10 +29,12 @@ import './mediatype-section-component.scss';
 function MediaTypeSection({ cat, mediatype }) {
     const [view, setView] = useState([0, 1, 2, 3]);
     const [current, setCurrent] = useState(0);
-    const [width, setWidth] = useState(window.innerWidth);
+    const { width, setWidth } = useContext(UserContext);
+
     const updateWidth = () => {
         setWidth(window.innerWidth);
     }
+
 
     useEffect(() => {
         window.addEventListener("resize", updateWidth);
@@ -113,7 +116,6 @@ function MediaTypeSection({ cat, mediatype }) {
         }
     }
 
-    console.log(width + ' ' + typeof(width))
     return (
         <div className='mediatypeSpacing'>
             <Link className='linkCategory' to='/category' state={{ cat: cat, mediatype: mediatype }} >
