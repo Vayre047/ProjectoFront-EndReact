@@ -1,6 +1,8 @@
 import './mediatype-component.scss';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Media from '../Media/media.component';
+import { Dropdown } from '../../Routes/Header/NavBar/dropdown-db';
 
 function MediaType({ Movies, Series } ){
     // state variables saving initial images positions and current (index of first view pos)
@@ -75,10 +77,18 @@ function MediaType({ Movies, Series } ){
         }
     }
 
+    const dataMovies = Dropdown.filter((drop) => 
+        drop.title.includes('Filmes'));
+
+    const dataSeries = Dropdown.filter((drop) => 
+        drop.title.includes('Séries'));
+
     return(
         <div>
             <div>
-                <h1 className='moviesTitle'>Filmes</h1>
+                <Link className='linksCategory' to='/filmes' state={{ items: dataMovies[0] }}>
+                    <h1 className='moviesTitle'>Filmes</h1>
+                </Link>
                 <div className='gridContainer'>
                     <button className='catBtn categoryBtnLeft' type='button' onClick={onMoviesLeftButton}>
                         {String.fromCharCode(60)}
@@ -96,7 +106,9 @@ function MediaType({ Movies, Series } ){
                 </div>
             </div>
             <div>
-                <h1 className='moviesTitle'>Séries</h1>
+                <Link className='linksCategory' to='/series' state={{ items: dataSeries[0] }}>
+                    <h1 className='moviesTitle'>Séries</h1>
+                </Link>
                 <div className='gridContainer'>
                     <button className='catBtn categoryBtnLeft' type='button' onClick={onSeriesLeftButton}>
                         {String.fromCharCode(60)}

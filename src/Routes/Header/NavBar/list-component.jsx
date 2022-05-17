@@ -22,6 +22,7 @@ function List({ items, myKey }){
         setIsLoggedIn(false);
     }
 
+    console.log(dropdown)
     return(
         <li onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className="menuItems">
         {/* List of menus (Filmes, Series, Idioma, Iniciar Sessão) */}
