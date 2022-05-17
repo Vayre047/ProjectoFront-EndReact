@@ -1,20 +1,20 @@
 .menuButton{
-    width: 10.938rem;
-    height: 2.5rem;
-    line-height: 2.5rem;
+    width: 175px;
+    height: 40px;
+    line-height: 40px;
     background-color: #595959;
     outline: none;
     border: 1px solid #595959;
-    border-radius: 6.25rem;
+    border-radius: 100px;
     font-family: Comic Sans, Comic Sans MS, cursive;
-    font-size: 1.25rem;
+    font-size: 20px;
     position: relative;
-    top: 1.875rem;
+    top: 30px;
 }
 
 .menuItems{
     text-align: center;
-    padding-left: 0.625rem;
+    padding-left: 10px;
     a{
         display: block;
         text-decoration: none;
@@ -23,7 +23,7 @@
     button{cursor: pointer;}
 }
 
-.menuItems:nth-child(3) {padding-left: 37.5rem;}
+.menuItems:nth-child(3) {padding-left: 600px;}
 
 .loginButton{
     background-color: #ff0000;
@@ -48,6 +48,46 @@
     border: 2px solid #fff;
     border-radius: 3px;
     padding: 20px 20px 20px 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .menuButton {
+        width: 100px;
+        height: 40px;
+        font-size: 16px;
+        background-color: #595959;
+        outline: none;
+        border: 1px solid #595959;
+        border-radius: 100px;
+        position: relative;
+        right: 130px;
+        top: -10px;
+        justify-content: flex-start;
+    }
+
+    .loginButton {
+        background-color: #ff0000;
+        border: #ff0000;
+        transition: 0.5s;
+        height: auto;
+        font-size: 14px;
+        &:hover {background-color: #990000;}
+    }
+
+    .menuItems {
+        text-align: center;
+        padding-left: -10px;
+        a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+        }
+        button {cursor: pointer;}
+    }
+
+    .menuItems:nth-child(2) {padding: 0 0 0 5px;}
+
+    .menuItems:nth-child(3) {padding: 0 0 0 360px;}
 }
 
 @media screen and (max-width: 520px) {

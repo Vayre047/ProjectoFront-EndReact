@@ -1,12 +1,12 @@
 .toggleMenu{
     list-style-type: none;
-    font-size: 0.875rem;
-    min-width: 10rem;
-    padding: 0.5rem 0;
-    border-radius: 0.5rem;
+    font-size: 14px;
+    min-width: 160px;
+    padding: 8px 0;
+    border-radius: 8px;
     display: none;
     position: relative;
-    top: 1.44rem;
+    top: 23px;
     text-decoration: none;
     text-align: center;
     justify-content: center;
@@ -15,10 +15,9 @@
 ul{padding-top: 12px;}
 
 .configurationList{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 16px 0;
     align-items: center;
-    border-radius: 0.4rem;
+    border-radius: 6.4px;
     border: 1px solid #000000;
     background-color: #333333;
 }
@@ -27,19 +26,53 @@ ul{padding-top: 12px;}
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
 }
 
 .configureLanguage{
     position: relative;
-    left: 6.25rem;
-    top: 6.25rem;
+    left: 100px;
+    top: 100px;
 }
 
 @media screen and (max-width: 1000px) {
+    .toggleMenu.show {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .configurationList {
+        padding: 12px 0;
+        border-radius: 6.4px;
+        border: 1px solid #000000;
+        background-color: #333333;
+    }
+
+    .configureLanguage {
+        position: relative;
+        left: 100px;
+        top: 100px;
+    }
+
+    .toggleMenu {
+        list-style-type: none;
+        font-size: 14px;
+        min-width: 120px;
+        //padding: 8px 0;
+        border-radius: 8px;
+        display: none;
+        position: relative;
+        top: 23px;
+        text-decoration: none;
+        text-align: center;
+        justify-content: center;
+    }
+
+    ul {padding-top: 12px;}
 }
 
 @media screen and (max-width: 520px) {
-
+    
 }
