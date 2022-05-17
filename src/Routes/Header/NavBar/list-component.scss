@@ -1,4 +1,4 @@
-.menuButton{
+.menuButton {
     width: 175px;
     height: 40px;
     line-height: 40px;
@@ -12,34 +12,37 @@
     top: 30px;
 }
 
-.menuItems{
+.menuItems {
     text-align: center;
-    padding-left: 10px;
-    a{
+    padding: 2px 0 0 10px;
+
+    a {
         display: block;
         text-decoration: none;
         color: #fff;
     }
-    button{cursor: pointer;}
+
+    button {cursor: pointer;}
 }
 
-.menuItems:nth-child(3) {padding-left: 600px;}
+.menuItems:nth-child(3) {padding-left: 40vw;}
 
-.loginButton{
+.loginButton {
     background-color: #ff0000;
     border: #ff0000;
     transition: 0.5s;
-    &:hover{background-color: #990000;}
+
+    &:hover {background-color: #990000;}
 }
 
-.userProfile{
+.userProfile {
     width: 75px;
     height: 75px;
     border: none;
     outline: none;
 }
 
-.profileLink{
+.profileLink {
     text-align: center;
     text-decoration: none;
     display: flex;
@@ -47,47 +50,28 @@
     color: #fff;
     border: 2px solid #fff;
     border-radius: 3px;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
 }
 
 @media screen and (max-width: 1000px) {
     .menuButton {
         width: 100px;
-        height: 40px;
         font-size: 16px;
-        background-color: #595959;
-        outline: none;
-        border: 1px solid #595959;
-        border-radius: 100px;
-        position: relative;
-        right: 130px;
         top: -10px;
         justify-content: flex-start;
     }
 
     .loginButton {
-        background-color: #ff0000;
-        border: #ff0000;
-        transition: 0.5s;
         height: auto;
         font-size: 14px;
-        &:hover {background-color: #990000;}
     }
 
     .menuItems {
-        text-align: center;
-        padding-left: -10px;
-        a {
-            display: block;
-            text-decoration: none;
-            color: #fff;
-        }
-        button {cursor: pointer;}
+        padding-left: 10px;
+        a {display: block;}
     }
 
-    .menuItems:nth-child(2) {padding: 0 0 0 5px;}
-
-    .menuItems:nth-child(3) {padding: 0 0 0 360px;}
+    .menuItems:nth-child(3) {padding: 0 0 0 35vw;}
 }
 
 @media screen and (max-width: 520px) {

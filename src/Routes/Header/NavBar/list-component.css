@@ -14,7 +14,7 @@
 
 .menuItems {
   text-align: center;
-  padding-left: 10px;
+  padding: 2px 0 0 10px;
 }
 
 .menuItems a {
@@ -28,7 +28,7 @@
 }
 
 .menuItems:nth-child(3) {
-  padding-left: 600px;
+  padding-left: 40vw;
 }
 
 .loginButton {
@@ -62,53 +62,30 @@
   color: #fff;
   border: 2px solid #fff;
   border-radius: 3px;
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
 }
 
 @media screen and (max-width: 1000px) {
   .menuButton {
     width: 100px;
-    height: 40px;
     font-size: 16px;
-    background-color: #595959;
-    outline: none;
-    border: 1px solid #595959;
-    border-radius: 100px;
-    position: relative;
-    right: 130px;
     top: -10px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
   .loginButton {
-    background-color: #ff0000;
-    border: #ff0000;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
     height: auto;
     font-size: 14px;
   }
-  .loginButton:hover {
-    background-color: #990000;
-  }
   .menuItems {
-    text-align: center;
-    padding-left: -10px;
+    padding-left: 10px;
   }
   .menuItems a {
     display: block;
-    text-decoration: none;
-    color: #fff;
-  }
-  .menuItems button {
-    cursor: pointer;
-  }
-  .menuItems:nth-child(2) {
-    padding: 0 0 0 5px;
   }
   .menuItems:nth-child(3) {
-    padding: 0 0 0 360px;
+    padding: 0 0 0 35vw;
   }
 }
 

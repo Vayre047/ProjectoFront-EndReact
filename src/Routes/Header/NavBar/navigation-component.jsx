@@ -24,11 +24,11 @@ function Navigation(){
     });
 
     return(
-        <nav className='configurationNav'>
+        <nav className='navi configurationNav'>
             <button className='hambMenu' type='button' onClick={ handleToggle }>{menuOpen ? (
-                <MdClose className='mdClose' />
+                <MdClose size={40} className='mdClose' />
             ) : (
-                <FiMenu className='fiMenu' />
+                <FiMenu size={40} className='fiMenu' />
             )
         }</button>
         {( !menuOpen && width <= 520 ) ? <div></div> : 

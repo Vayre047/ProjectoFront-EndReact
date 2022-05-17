@@ -1,23 +1,22 @@
 .categoriesList {
-    display: flex;
+    display: grid;
     list-style-type: none;
+    grid-template-columns: repeat(4, 1fr);
 }
 
-.configurationNav{
+.configurationNav {
     position: relative;
     top: 30px;
     left: -1rem;
+    float: right;
+    width: 90%;
 }
 
-.mdClose .fiMenu{
-    color: #fff;
-    width: 40px;
-    height: 40px;
-}
+.mdClose .fiMenu {color: #fff;}
 
-.hambMenu{display: none;}
+.hambMenu {display: none;}
 
-.showMenu{
+.showMenu {
     display: block;
     flex-direction: column;
     align-items: left;
@@ -26,21 +25,27 @@
 
 @media screen and (max-width: 1000px) {
     .configurationNav {
-        position: relative;
-        top: 10px;
-        right: 5px;
+        top: 3rem;
+        left: 4rem;
+        float: none;
     }
 }
 
 @media screen and (max-width: 520px) {
+    .categoriesList {
+        position: relative;
+        bottom: 10vh;
+        right: 33vw;
+    }
+
     .hambMenu {
         background-color: transparent;
         color: #fff;
         border: none;
         display: block;
-        position: fixed;
-        top: 7vh;
-        left: 11vw;
+        position: relative;
+        bottom: 4.5vh;
+        right: 35vw;
         cursor: pointer;
         z-index: 10;
     }
