@@ -19,39 +19,23 @@
   text-align: center;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1000px) {
   .columnsPosition {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: center;
-            flex-direction: center;
     padding: 22% 0 0 56px;
   }
   .imageConfiguration {
     width: 35vw;
     height: 68vh;
-    border-radius: 11.2px;
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 520px) {
   .columnsPosition {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: center;
-            flex-direction: center;
     padding: 34% 0 0 4vw;
   }
   .imageConfiguration {
     width: 220px;
     height: 300px;
-    border-radius: 11.2px;
   }
 }
 /*# sourceMappingURL=filme-component.css.map */

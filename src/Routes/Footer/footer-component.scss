@@ -18,15 +18,9 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .footer-container {
-        text-align: center;
-        padding: 5% 0 1.75% 0;
-    }
+    .footer-container {padding: 5% 0 1.75% 0;}
 }
 
 @media screen and (max-width: 520px) {
-    .footer-container {
-        text-align: center;
-        padding: 15% 0 1.25% 0;
-    }
+    .footer-container {padding: 15% 0 1.25% 0;}
 }

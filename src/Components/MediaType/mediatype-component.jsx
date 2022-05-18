@@ -86,7 +86,7 @@ function MediaType({ Movies, Series } ){
     return(
         <div>
             <div>
-                <Link className='linksCategory' to='/filmes' state={{ items: dataMovies[0] }}>
+                <Link className='linkCategory' to='/filmes' state={{ items: dataMovies[0] }}>
                     <h1 className='moviesTitle'>Filmes</h1>
                 </Link>
                 <div className='gridContainer'>
@@ -106,7 +106,7 @@ function MediaType({ Movies, Series } ){
                 </div>
             </div>
             <div>
-                <Link className='linksCategory' to='/series' state={{ items: dataSeries[0] }}>
+                <Link className='linkCategory' to='/series' state={{ items: dataSeries[0] }}>
                     <h1 className='moviesTitle'>Séries</h1>
                 </Link>
                 <div className='gridContainer'>

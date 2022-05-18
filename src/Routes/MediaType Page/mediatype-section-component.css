@@ -42,8 +42,6 @@
 
 @media screen and (max-width: 1000px) {
   .categoryPosition {
-    font-size: 32px;
-    position: relative;
     left: 45vw;
   }
   .mediatypeSpacing {

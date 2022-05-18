@@ -6,9 +6,7 @@
 .secondaryStyle{
     color: #fff;
     text-decoration: none;
-    h2{
-        padding: 0 0 2% 12vw;
-    }
+    h2{padding: 0 0 2% 12vw;}
 }
 
 @media screen and (max-width: 1000px) {
@@ -18,11 +16,11 @@
     }
 
     .secondaryStyle{
-    h2{
-        padding: 20% 0 2% 10vw;
-        font-size: 34px;
+        h2{
+            padding: 20% 0 2% 10vw;
+            font-size: 34px;
+            }
         }
-    }
 }
 
 @media screen and (max-width: 520px) {
