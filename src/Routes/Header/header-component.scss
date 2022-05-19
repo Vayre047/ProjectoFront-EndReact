@@ -1,7 +1,6 @@
 .logo {
     grid-area: logo;
     grid-column: 1;
-    border: 1px solid blue;
 }
 
 .navi {
@@ -37,7 +36,6 @@
 @media screen and (max-width: 520px) {
     .logoPosition {
         padding: 4px 0 0 0;
-        position: absolute;
         left: 50vw;
         width: 70px;
         height: 70px;
@@ -45,7 +43,6 @@
 
     .header-container {
         background-color: #000000;
-        background: url('../../../public/images/TBATitle.jpeg') no-repeat center/contain;
         width: 35%;
         height: 75px;
         position: absolute;

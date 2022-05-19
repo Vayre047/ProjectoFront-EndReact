@@ -84,6 +84,9 @@
   .menuItems a {
     display: block;
   }
+  .menuItems:nth-child(2) {
+    padding: 0.5vh 0 0.5vh 0;
+  }
   .menuItems:nth-child(3) {
     padding: 0 0 0 35vw;
   }
