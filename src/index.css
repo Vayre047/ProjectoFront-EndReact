@@ -8,6 +8,7 @@ body {
   font-family: Comic Sans, Comic Sans MS, cursive;
   background-color: #000;
   color: #fff;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
