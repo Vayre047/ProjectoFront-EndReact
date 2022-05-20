@@ -17,6 +17,7 @@ function FilmeDetail(){
                 <p>Director: {Director}</p>
                 <p>Elenco: {Elenco}</p>
                 <p>Sinopse: {Sinopse}</p>
+                <button className="seriesButton" type="button">Ver Filme</button>
             </div>
         </div>
     )

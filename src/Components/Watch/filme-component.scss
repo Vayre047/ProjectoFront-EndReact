@@ -12,6 +12,17 @@
 
 .textPosition{text-align: center;}
 
+.seriesButton{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 2.5vh 0 0 0;
+}
+
 @media screen and (max-width: 1000px) {
     .columnsPosition {padding: 22% 0 0 56px;}
 

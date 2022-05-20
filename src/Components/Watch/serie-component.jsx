@@ -19,11 +19,10 @@ function SerieDetail(){
                 <p>Elenco: {Elenco}</p>
                 <p>Sinopse: {Sinopse}</p>
                 {Temporada.map((temp, index) =>
-                    <button key={index} type="button">
+                    <button className="seriesButton" key={index} type="button">
                         {temp}
                     </button> 
                 )}
-                
             </div>
         </div>
     )
