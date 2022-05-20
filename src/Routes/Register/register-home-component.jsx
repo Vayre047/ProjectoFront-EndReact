@@ -22,11 +22,11 @@ function Register(){
                     <p className='formationText'>Quer começar a ver ? Coloque o seu e-mail para criar ou activar a sua conta.</p>
                     <div className="registerContainer">
                         <input className="registerInput" type="email" placeholder="Endereço de E-mail" />
-                        <button className="registerBTN" type='button'>
-                            <Link className="registerLink" to={"/register"}>
-                                Começar
-                            </Link>
-                        </button>
+                        <Link to={"/register"}>
+                            <button className="registerBTN" type='button'>
+                                    Começar
+                            </button>
+                        </Link>
                     </div>
                 </div>
             }

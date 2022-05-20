@@ -27,12 +27,6 @@
   color: #fff;
 }
 
-@media screen and (max-width: 1000px) {
-  .moviesPosition {
-    display: block;
-  }
-}
-
 @media screen and (max-width: 520px) {
   .imageSection {
     width: 120px;

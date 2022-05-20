@@ -25,11 +25,7 @@
   .imageProfile {
     width: 175px;
     height: 200px;
-    top: 130px;
     left: 29%;
-  }
-  .userDetails {
-    text-align: center;
   }
 }
 /*# sourceMappingURL=user-profile-component.css.map */

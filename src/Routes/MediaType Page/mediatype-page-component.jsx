@@ -7,7 +7,6 @@ function MediatypePage(){
     const location = useLocation();
     const { items } = location.state;
 
-    console.log(items)
     return(
         <div>
             <h2 className="titleCategory">{items.title}</h2>

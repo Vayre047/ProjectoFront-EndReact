@@ -18,6 +18,7 @@ ul {
   border-radius: 6.4px;
   border: 1px solid #000000;
   background-color: #333333;
+  z-index: 1;
 }
 
 .toggleMenu.show {

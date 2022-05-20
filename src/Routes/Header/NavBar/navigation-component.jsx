@@ -7,17 +7,20 @@ import { FiMenu } from 'react-icons/fi';
 import './navigation-component.scss';
 
 function Navigation(){
+    // state variable menuOpen and correspondent state function
     const [ menuOpen, setMenuOpen ] = useState(false);
     const handleToggle = () => {
         setMenuOpen( !menuOpen );
     }
 
+    //context variable width
     const { width, setWidth } = useContext(UserContext);
 
     const updateWidth = () => {
         setWidth(window.innerWidth);
     }
 
+    // update width when screen resizes
     useEffect(() => {
         window.addEventListener("resize", updateWidth);
         return () => window.removeEventListener("resize", updateWidth);

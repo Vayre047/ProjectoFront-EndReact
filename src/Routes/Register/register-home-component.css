@@ -25,11 +25,12 @@
 }
 
 .registerBTN {
-  width: 9%;
-  height: 66px;
+  width: 100px;
+  height: 64px;
   font-size: 16px;
   font-weight: 600;
   background-color: #ff0000;
+  color: #fff;
   border: none;
   border-radius: 3px;
   -webkit-transition: 1s;
@@ -40,13 +41,6 @@
 
 .registerBTN:hover {
   background-color: #990000;
-}
-
-.registerLink {
-  text-decoration: none;
-  height: 6.401137980085348vh;
-  background-color: #ff0000;
-  color: #fff;
 }
 
 .registerLink:hover {
@@ -106,10 +100,7 @@
     height: 68.5px;
   }
   .registerInput {
-    width: 0;
-    height: 0;
-    font-size: 0;
-    padding-left: 0;
+    display: none;
   }
   .registerLink {
     height: 42.5px;
